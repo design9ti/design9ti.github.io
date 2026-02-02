@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388.13 96.54">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #8e2e1d;
+      }
+
+      .cls-1, .cls-5 {
+        font-family: Helvetica, Helvetica;
+      }
+
+      .cls-1, .cls-5, .cls-3 {
+        font-size: 15.22px;
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #ed1c24;
+        font-family: Arial-Black, 'Arial Black';
+        font-size: 21.31px;
+        font-weight: 800;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        font-family: Roboto-Bold, Roboto;
+        font-size: 20.07px;
+        font-weight: 700;
+        letter-spacing: .1em;
+      }
+
+      .cls-5 {
+        fill: #cf2734;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke: #8e2e1d;
+        stroke-miterlimit: 10;
+        stroke-width: .51px;
+      }
+
+      .cls-4 {
+        font-size: 34.86px;
+      }
+    </style>
+  </defs>
+  <g id="Text">
+    <g>
+      <line class="cls-8" x1="0" y1="63.16" x2="388.13" y2="63.16"/>
+      <text transform="translate(0 18.29)"><tspan><tspan class="cls-7" x="0" y="0">PLANNING</tspan><tspan class="cls-5" x="124.65" y="0"> </tspan><tspan class="cls-3" x="128.8" y="0">AND</tspan><tspan class="cls-5" x="159.34" y="0"> </tspan><tspan class="cls-6" x="163.5" y="0">DESIGN</tspan><tspan class="cls-1" x="254.03" y="0"> </tspan><tspan class="cls-3" x="258.18" y="0">FOR</tspan><tspan class="cls-1" x="286.2" y="0"> </tspan><tspan class="cls-7" x="290.36" y="0">SAFETY</tspan></tspan></text>
+      <text class="cls-4" transform="translate(0 54.76)"><tspan x="0" y="0">PICTORIAL GUIDE 2025</tspan></text>
+      <text class="cls-2" transform="translate(0 91.1)"><tspan x="0" y="0">First Edition</tspan></text>
+    </g>
+  </g>
+</svg>

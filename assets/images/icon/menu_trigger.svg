@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.98 21.93">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed1c24;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="0" y="0" width="10.58" height="2.96" rx="1.48" ry="1.48"/>
+  <rect class="cls-1" x="0" y="9.48" width="30.98" height="2.96" rx="1.48" ry="1.48"/>
+  <rect class="cls-1" x="0" y="18.97" width="20.78" height="2.96" rx="1.48" ry="1.48"/>
+</svg>
