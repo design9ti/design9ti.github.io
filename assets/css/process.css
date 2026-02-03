@@ -1,0 +1,220 @@
+/* 
+  0 - 768
+  769-1670
+*/
+
+body.process-template {
+  .content-container {
+    background-image: url(/assets/images/process_bg_right_top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 36vw -25vh;
+    background-attachment: fixed;
+  }
+}
+
+/* only for process 5 */
+.page-template {
+  &.process-5 {
+    --color-process1: #f06522;
+    --color-process2: orange;
+    --color-process3: yellow;
+    --color-process4: brown;
+    --color-process5: #000;
+    --pl: 110px;
+    --m-pl: 60px;
+    padding-top: 200px;
+    /* only for process 5's one */
+    .page-title-wrapper {
+      background-position-x: var(--m-pl);
+      position: relative;
+      padding-left: var(--m-pl);
+      margin-bottom: 0;
+      left: 20px;
+      @media screen and (min-width: 768px) {
+        background-position-x: var(--pl);
+        padding-left: var(--pl);
+        left: unset;
+      }
+      &::after {
+        left: unset;
+      }
+
+      &::before {
+        position: absolute;
+        left: 0;
+        font-size: 100px;
+        bottom: -20px;
+        -webkit-text-stroke: 10px;
+        filter: drop-shadow(10px 7px 0px rgba(0, 0, 0, 0.1));
+        @media screen and (min-width: 768px) {
+          font-size: 160px;
+        }
+      }
+      h1{
+        font-size: 1rem;
+        @media screen and (min-width: 768px) {
+          font-size: 2.5rem;
+        }
+      }
+      .page-subtitle {
+        color: #bb202f;
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding-left: 24px;
+        @media screen and (min-width: 768px) {
+          font-size: 1.6rem;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          height: 6px;
+          width: 110px;
+          margin: 20px 0;
+          background-image: radial-gradient(circle, var(--color-secondary) 2.5px, transparent 2.5px);
+          background-size: 14px 6px;
+          background-position: 0 center;
+          background-repeat: repeat-x;
+        }
+      }
+
+      /* process one !! */
+      &.one {
+        &::before {
+          content: "1";
+          color: var(--color-process1);
+        }
+
+        .page-title {
+          background: var(--color-process1);
+
+          &::after {
+            background: var(--color-process1);
+          }
+        }
+      }
+
+      &.two {
+        &::before {
+          content: "2";
+          color: var(--color-process2);
+        }
+
+        .page-title {
+          background: var(--color-process2);
+
+          &::after {
+            background: var(--color-process2);
+          }
+        }
+      }
+
+      &.three {
+        &::before {
+          content: "3";
+          color: var(--color-process3);
+        }
+
+        .page-title {
+          background: var(--color-process3);
+
+          &::after {
+            background: var(--color-process3);
+          }
+        }
+      }
+
+      &.four {
+        &::before {
+          content: "4";
+          color: var(--color-process4);
+        }
+
+        .page-title {
+          background: var(--color-process4);
+
+          &::after {
+            background: var(--color-process4);
+          }
+        }
+      }
+
+      &.five {
+        &::before {
+          content: "5";
+          color: var(--color-process5);
+        }
+
+        .page-title {
+          background: var(--color-process5);
+
+          &::after {
+            background: var(--color-process5);
+          }
+        }
+      }
+    }
+
+    .page-template-content-inner {
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 100%;
+      background: transparent;
+      @media screen and (min-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      h3 {
+        line-height: 1.2;
+        font-weight: bold;
+        font-size: 1.75rem;
+      }
+
+      h4 {
+        line-height: 1.2;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: black;
+      }
+
+      p {
+        font-size: 1.15rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+      }
+
+      /* process one !! */
+      &.one {
+        h3 {
+          color: var(--color-process1);
+        }
+      }
+
+      &.two {
+        h3 {
+          color: var(--color-process2);
+        }
+      }
+
+      &.three {
+        h3 {
+          color: var(--color-process3);
+        }
+      }
+
+      &.four {
+        h3 {
+          color: var(--color-process4);
+        }
+      }
+
+      &.five {
+        h3 {
+          color: var(--color-process5);
+        }
+      }
+    }
+  }
+}

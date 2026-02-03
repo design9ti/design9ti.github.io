@@ -93,17 +93,71 @@ function renderOtherHeader() {
   `)
 }
 
+function changeFontSize(size) {
+  const root = document.documentElement
+  const sizeMap = {
+    1: '16px',
+    2: '18px',
+    3: '20px'
+  }
+  root.style.fontSize = sizeMap[size]
+  localStorage.setItem('fontSizePreference', size)
+  updateFontSizeButtons(size)
+}
+
+function changeLanguage(newLocale) {
+  const pathSegments = window.location.pathname.split('/').filter(segment => segment !== '')
+  const currentLocale = getLocale()
+  
+  // If already on this language, do nothing
+  if (currentLocale === newLocale) return
+  
+  let newPath
+  
+  // If current page is in language-specific folder, replace the locale
+  if (pathSegments[0] === currentLocale && (currentLocale === 'en' || currentLocale === 'sc' || currentLocale === 'zh')) {
+    newPath = '/' + newLocale + '/' + pathSegments.slice(1).join('/')
+  } else {
+    // If on homepage or root
+    newPath = '/' + newLocale + (pathSegments.length > 0 ? '/' + pathSegments.join('/') : '/')
+  }
+  
+  window.location.href = newPath
+}
+
+function updateLanguageButtons(currentLocale) {
+  document.querySelectorAll('.lang-switcher > div').forEach((div, index) => {
+    const langCodes = ['zh', 'sc', 'en']
+    if (langCodes[index] === currentLocale) {
+      div.classList.add('active')
+    } else {
+      div.classList.remove('active')
+    }
+  })
+}
+
+function updateFontSizeButtons(activeSize) {
+  document.querySelectorAll('.acc-font-size > div').forEach((div, index) => {
+    const btnSize = index + 1
+    if (btnSize === activeSize) {
+      div.classList.add('active')
+    } else {
+      div.classList.remove('active')
+    }
+  })
+}
+
 function renderSizeAndLang() {
   return `
     <div class="acc-font-size flex justify-center gap-2">
-      <div class=""><span class="size1">A</span></div>
-      <div class=""><span class="size2">A</span></div>
-      <div class=""><span class="size3">A</span></div>
+      <div class="" onclick="changeFontSize(1)"><span class="size1">A</span></div>
+      <div class="" onclick="changeFontSize(2)"><span class="size2">A</span></div>
+      <div class="" onclick="changeFontSize(3)"><span class="size3">A</span></div>
     </div>
     <div class="lang-switcher flex justify-center text-base">
-      <div><span class="font-bold">繁</span></div>
-      <div><span class="font-bold">简</span></div>
-      <div class="active"><span class="font-bold">EN</span></div>
+      <div onclick="changeLanguage('zh')"><span class="font-bold">繁</span></div>
+      <div onclick="changeLanguage('sc')"><span class="font-bold">简</span></div>
+      <div onclick="changeLanguage('en')"><span class="font-bold">EN</span></div>
     </div>
     `
 }
@@ -213,6 +267,14 @@ function onDocumentLoaded() {
     renderOtherHeader()
   }
   renderFooter()
+  
+  // Restore font size preference
+  const savedFontSize = localStorage.getItem('fontSizePreference') || 2
+  changeFontSize(parseInt(savedFontSize))
+  
+  // Set active language button
+  const currentLocale = getLocale()
+  updateLanguageButtons(currentLocale)
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoaded)

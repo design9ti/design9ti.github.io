@@ -36,7 +36,15 @@ body {
 
 .acc-font-size {
   color: var(--color-secondary);
-  line-height: 0;
+  /* line-height: 0; */
+
+  div {
+    cursor: pointer;
+  }
+
+  div.active {
+    border-bottom: 1px solid var(--color-secondary);
+  }
 
   .size1 {
     font-size: 15.2px;
@@ -133,6 +141,14 @@ nav {
         width: 100%;
         max-height: 24px;
       }
+    }
+  }
+  .acc-font-size, .lang-switcher{
+    display: none;
+  }
+  @media screen and (min-width: 768px) {  
+    .acc-font-size, .lang-switcher{
+      display: flex;
     }
   }
 }
@@ -238,6 +254,12 @@ nav {
 
 footer {
   max-width: var(--inner-width);
+  div{
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
 }
 
 .content-container {
@@ -348,79 +370,17 @@ footer {
     }
   }
 
-  /* only for process 5 */
-  &.process-5 {
-    --color-process1: #f06522;
-    --pl: 110px;
-    padding-top: 200px;
-
-    /* only for process 5's one */
-    .page-title-wrapper {
-      background-position-x: var(--pl);
-      position: relative;
-      &::after{
-        left: unset;
-      }
-      &.one {
-        padding-left: var(--pl);
-        &::before {
-          content: "1";
-          color: var(--color-process1);
-          position: absolute;
-          left: 0;
-          font-size: 160px;
-          bottom: -20px;
-          -webkit-text-stroke: 10px;
-        }
-
-        .page-title {
-          background: var(--color-process1);
-
-          &::after {
-            background: var(--color-process1);
-          }
-        }
-
-        .page-subtitle {
-          color: #bb202f;
-          font-weight: 600;
-          font-size: 1.6rem;
-          padding-left: 24px;
-
-          &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            height: 6px;
-            width: 110px;
-            margin: 20px 0;
-            background-image: radial-gradient(circle, var(--color-secondary) 2.5px, transparent 2.5px);
-            background-size: 14px 6px;
-            background-position: 0 center;
-            background-repeat: repeat-x;
-          }
-        }
-      }
-    }
-
-    .page-template-content-inner {
-      max-width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-      background: transparent;
-      &.one {
-        h3 {
-          line-height: 1.2;
-          font-weight: bold;
-          font-size: 1.75rem;
-          color: var(--color-process1);
-        }
-        p{
-          font-size: 1.15rem;
-          line-height: 1.4;
-        }
-      }
-    }
-  }
 }
 
+.single-img-section{
+  padding: 20px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p{
+    font-style: italic;
+    color: #555 !important;
+    margin-bottom: 0 !important;
+  }
+}

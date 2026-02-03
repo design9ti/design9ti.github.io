@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 867.71 621.07">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgb(201, 136, 97);
+        mix-blend-mode: multiply;
+      }
+
+      .cls-2 {
+        fill: rgb(201, 136, 97);
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g class="cls-2">
+    <g id="bg">
+      <polygon class="cls-1" points="433.85 0 0 261.2 433.86 522.4 867.71 261.2 433.85 0"/>
+      <polygon class="cls-1" points="596.54 523.12 515.2 572.09 596.54 621.07 677.88 572.09 596.54 523.12"/>
+    </g>
+  </g>
+</svg>
