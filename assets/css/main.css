@@ -378,6 +378,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  &.sm{
+    margin: 1.5rem auto;
+  }
+  &.none{
+    margin: .25rem auto;
+  }
   p{
     font-style: italic;
     color: #555 !important;

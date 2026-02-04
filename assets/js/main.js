@@ -155,9 +155,9 @@ function renderSizeAndLang() {
       <div class="" onclick="changeFontSize(3)"><span class="size3">A</span></div>
     </div>
     <div class="lang-switcher flex justify-center text-base">
-      <div onclick="changeLanguage('zh')"><span class="font-bold">繁</span></div>
-      <div onclick="changeLanguage('sc')"><span class="font-bold">简</span></div>
-      <div onclick="changeLanguage('en')"><span class="font-bold">EN</span></div>
+      <div class="cursor-pointer" onclick="changeLanguage('zh')"><span class="font-bold">繁</span></div>
+      <div class="cursor-pointer" onclick="changeLanguage('sc')"><span class="font-bold">简</span></div>
+      <div class="cursor-pointer" onclick="changeLanguage('en')"><span class="font-bold">EN</span></div>
     </div>
     `
 }
