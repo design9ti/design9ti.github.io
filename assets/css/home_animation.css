@@ -35,14 +35,14 @@
     }
   }
   h4 {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #bb202f;
     padding-bottom: 10px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
   }
 
@@ -166,10 +166,11 @@
 }
 #banner-2{
   position: relative;
+  background-color: #ecd7c2;
 }
 #banner-1-img{
   position: relative;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

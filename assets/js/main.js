@@ -59,7 +59,7 @@ function renderOtherHeader() {
         <a class="inline-flex" href="/">
           <img class="w-[240px]" src="/assets/images/icon/home-logo.svg"/>
         </a>
-        <div class="flex items-center justify-center menu gap-[20px] h-full">
+        <div class="flex items-center justify-center menu gap-[30px] h-full">
           <div class="menu-wrapper h-full">
             ${menuItems.map(i => {
               if (i.children && i.children.length > 0) {
@@ -222,13 +222,17 @@ function renderFooter() {
   const body = document.querySelector('body')
   body.insertAdjacentHTML('beforeend', `
     <footer class="flex justify-between mx-auto">
-      <div class="flex p-5 items-center">
-        <img class="max-h-[56px] mr-5" src="/assets/images/icon/footer_1.svg" />
-        <img class="max-h-[30px]" src="/assets/images/icon/footer_2.svg" />
+      <div class="footer-inner flex justify-between mx-auto">
+        <div class="flex p-5 items-center">
+          
+          <img class="max-h-[30px]" src="/assets/images/icon/footer_2.svg" />
+        </div>
+        
       </div>
-      <div class="flex items-center text-[#EF4136]">©${new Date().getFullYear()} All Rights Reserved.</div>
     </footer>
   `)
+  // <img class="max-h-[56px] mr-5" src="/assets/images/icon/footer_1.svg" />
+  // <div class="flex items-center text-[#EF4136]">©${new Date().getFullYear()} All Rights Reserved.</div>
 }
 
 function toggleSubmenu(index) {

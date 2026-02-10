@@ -10,11 +10,15 @@
   --color-introduction: #be141b;
 }
 
+html {
+  font-size: 16px;
+}
 img {
   height: 100%;
 }
 
 body {
+  font-size: 1rem;
   height: 100%;
   width: 100%;
   &.process-template{
@@ -25,7 +29,8 @@ body {
   }
 
   .home-banner {
-    height: 100vh;
+    /* height: 100vh; */
+    height: calc(100vh - 100px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -251,11 +256,15 @@ nav {
 }
 
 footer {
-  max-width: var(--inner-width);
-  div{
-    flex-direction: column;
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
+  background-color: #fff;
+  .footer-inner{
+    max-width: var(--inner-width);
+    margin: auto;
+    div{
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
     }
   }
 }

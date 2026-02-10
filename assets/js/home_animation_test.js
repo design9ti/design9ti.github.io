@@ -1,86 +1,103 @@
+let sections;
+let animating = false;
+let wrap;
+let currentIndex = 0;
+
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger, Observer, ScrollSmoother);
 
-  animationFirst()
-  animationSecond()
+  // animationFirst()
+  // animationSecond()
 
-  let sections = document.querySelectorAll("card")
-  let animating = false
-  let wrap = gsap.utils.wrap(0, sections.length)
+  sections = document.querySelectorAll("card")
+  wrap = gsap.utils.wrap(0, sections.length)
 
-  // Observer.create({
-  //   type: "wheel,touch,pointer",
-  //   wheelSpeed: -1,
-  //   onDown: () => !animating && gotoSection(currentIndex - 1, -1),
-  //   onUp: () => !animating && gotoSection(currentIndex + 1, 1),
-  //   tolerance: 10,
-  //   preventDefault: true
-  // });
-
-  // gotoSection(0, 1);
-  // function gotoSection(index, direction) {
-  //   index = wrap(index); // make sure it's valid
-  //   animating = true;
-  //   let fromTop = direction === -1,
-  //     dFactor = fromTop ? -1 : 1,
-  //     tl = gsap.timeline({
-  //       defaults: { duration: 1.25, ease: "power1.inOut" },
-  //       onComplete: () => animating = false
-  //     })
-  // }
+  Observer.create({
+    type: "wheel,touch,pointer",
+    wheelSpeed: -1,
+    onDown: () => !animating && gotoSection(currentIndex - 1, -1),
+    onUp: () => !animating && gotoSection(currentIndex + 1, 1),
+    tolerance: 10
+  });
 })
+
+function gotoSection(index, direction) {
+  if (!sections || sections.length === 0) return
+  
+  index = wrap(index)
+  animating = true
+
+  // Fade out current section
+  if (sections[currentIndex]) {
+    gsap.to(sections[currentIndex], {
+      autoAlpha: 0,
+      duration: 0.5,
+      ease: "power2.inOut"
+    })
+  }
+
+  // Fade in next section
+  if (sections[index]) {
+    gsap.to(sections[index], {
+      autoAlpha: 1,
+      duration: 0.5,
+      ease: "power2.inOut",
+      onComplete: () => {
+        currentIndex = index
+        animating = false
+      }
+    })
+  } else {
+    animating = false
+  }
+}
 
 
 function animationFirst() {
   const t1 = gsap.timeline({
+    defaults: { ease: "none" },
     scrollTrigger: {
       trigger: "#banner-1",
       start: "top top",
-      end: "+=1200%",
+      end: "+=600%",
       pin: true,
-      scrub: 1,
+      scrub: 1.5,
       anticipatePin: 1,
       markers: true // debug usage
     }
   })
-  
-  // step 1 - animate for 3s
-  t1.to("#banner-1-img", { 
-    scale: 1.4, 
-    x: '15%', 
-    y: '30%', 
-    duration: 3, 
-    onEnter: () => t1.scrollTrigger.spacer.style.backgroundColor = "#fcdfe2" 
-  })
-  t1.to("#card-1-1", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, 0)
-  t1.to("#card-1-1", { autoAlpha: 0, duration: 1.8, ease: "power1.in" })
-  
-  // scroll pause - 1s
-  t1.to({}, { duration: 1 })
-  
-  // step 2 - animate for 3s
-  t1.to("#banner-1-img", { 
-    scale: 1.4, 
-    x: '-10%', 
-    y: '0%', 
-    duration: 3
-  })
-  t1.to("#card-1-2", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "<0")
-  t1.to("#card-1-2", { autoAlpha: 0, duration: 1.8, ease: "power1.in" })
-  
-  // scroll pause - 1s
-  t1.to({}, { duration: 1 })
-  
-  // step 3 - animate for 3s
-  t1.to("#banner-1-img", { 
-    scale: 1.4, 
-    x: '-20%', 
-    y: '50%', 
-    duration: 3
-  })
-  t1.to("#card-1-3", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "<0")
-  t1.to("#card-1-3", { autoAlpha: 0, duration: 1.8, ease: "power1.in" })
-  
+  // step 1
+  t1.to("#banner-1-img", {
+    scale: 1.4,
+    x: '15%',
+    y: '30%',
+    duration: 3,
+    onEnter: () => t1.scrollTrigger.spacer.style.backgroundColor = "#fcdfe2"
+  }, "+=1.5")
+  t1.to("#card-1-1", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
+  t1.to("#card-1-1", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
+  // step 2
+  t1.to("#banner-1-img", {
+    scale: 1.4,
+    x: '-10%',
+    y: '0%',
+    duration: 4,
+  }, "+=1.2")
+  t1.to("#card-1-2", {
+    autoAlpha: 1,
+    duration: 2.2,
+    ease: "power1.out",
+  }, "+=0.4")
+  t1.to("#card-1-2", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
+  // step 3
+  t1.to("#banner-1-img", {
+    scale: 1.4,
+    x: '-20%',
+    y: '50%',
+    duration: 4,
+  }, "+=1.2")
+  t1.to("#card-1-3", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
+  t1.to("#card-1-3", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
   // end
   t1.to("#banner-1-img", {
     x: 0,
