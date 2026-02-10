@@ -54,8 +54,8 @@ function renderOtherHeader() {
 
   const body = document.querySelector('body')
   body.insertAdjacentHTML('afterbegin', `
-    <nav class="sticky top-0">
-      <div class="flex justify-between nav-other-inner absolute w-full px-7.5 h-[100px] items-center">
+    <nav class="">
+      <div class="flex justify-between nav-other-inner w-full px-7.5 h-[100px] items-center">
         <a class="inline-flex" href="/">
           <img class="w-[240px]" src="/assets/images/icon/home-logo.svg"/>
         </a>
@@ -211,17 +211,6 @@ function renderBackdropMenu() {
         }
       }).join('')}
       <div class="flex flex-col gap-7 mt-4">
-        <div class="flex items-start justify-center menu gap-[15px]">
-          <a href="https://www.facebook.com/housingwellbeinghk" target="_blank">
-            <img class="facebook" src="/assets/images/icon/facebook.svg" />
-          </a>
-          <a href="https://www.instagram.com/housingwellbeing.hk/" target="_blank">
-            <img class="ig" src="/assets/images/icon/ig.svg" />
-          </a>
-          <a href="mailto:hello@housingwellbeing.hk">
-            <img class="email" src="/assets/images/icon/email.svg"  />
-          </a>
-        </div>
         ${renderSizeAndLang()}
       </div>
     </div>
@@ -262,7 +251,8 @@ function toggleSubmenu(index) {
 function onDocumentLoaded() {
   const isHomePage = document.querySelector('body.homepage')
   if (isHomePage) {
-    renderHeader()
+    // renderHeader()
+    renderOtherHeader()
   } else {
     renderOtherHeader()
   }

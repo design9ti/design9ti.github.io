@@ -17,6 +17,12 @@ img {
 body {
   height: 100%;
   width: 100%;
+  &.process-template{
+    background: var(--color-primary);
+  }
+  &.homepage{
+    background: rgb(252, 223, 226);
+  }
 
   .home-banner {
     height: 100vh;
@@ -95,10 +101,10 @@ nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  position: absolute;
   width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  /* position: absolute; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   z-index: 90;
   padding-top: 0;
   max-width: 96vw;
@@ -256,7 +262,6 @@ footer {
 
 .content-container {
   height: 100%;
-  background: var(--color-primary);
 }
 
 .lang-switcher {
