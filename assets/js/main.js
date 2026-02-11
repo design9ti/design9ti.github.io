@@ -13,15 +13,6 @@ function renderHeader() {
           <img class="w-[380px]" src="/assets/images/icon/home-logo.svg"/>
         </a>
         <div class="flex items-start justify-center menu gap-[15px]">
-          <a href="https://www.facebook.com/housingwellbeinghk" target="_blank">
-            <img class="facebook" src="/assets/images/icon/facebook.svg" />
-          </a>
-          <a href="https://www.instagram.com/housingwellbeing.hk/" target="_blank">
-            <img class="ig" src="/assets/images/icon/ig.svg" />
-          </a>
-          <a href="mailto:hello@housingwellbeing.hk">
-            <img class="email" src="/assets/images/icon/email.svg"  />
-          </a>
           <a
             onclick="renderBackdropMenu()"
             class="menu_trigger homepage"
@@ -49,12 +40,11 @@ function renderOtherHeader() {
     { title: 'BIM', url: 'introduction.html' },
     { title: 'Case Study', url: 'introduction.html' },
     { title: 'Checklist', url: 'introduction.html' },
-    { title: 'Gallery', url: 'introduction.html' },
   ]
 
   const body = document.querySelector('body')
   body.insertAdjacentHTML('afterbegin', `
-    <nav class="">
+    <nav class="" id="nav-header">
       <div class="flex justify-between nav-other-inner w-full px-7.5 h-[100px] items-center">
         <a class="inline-flex" href="/">
           <img class="w-[240px]" src="/assets/images/icon/home-logo.svg"/>
@@ -255,8 +245,8 @@ function toggleSubmenu(index) {
 function onDocumentLoaded() {
   const isHomePage = document.querySelector('body.homepage')
   if (isHomePage) {
-    // renderHeader()
-    renderOtherHeader()
+    renderHeader()
+    // renderOtherHeader()
   } else {
     renderOtherHeader()
   }

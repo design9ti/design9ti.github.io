@@ -292,6 +292,7 @@ footer {
   display: inline-block;
   margin-bottom: 40px;
   position: relative;
+  margin-left: 55px;
 
   &::after {
     content: "";

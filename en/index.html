@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/modal.css">
   <link rel="stylesheet" href="../assets/css/home_animation.css">
+  <link rel="stylesheet" href="../assets/css/slider.css">
 </head>
 
 <body class="homepage">
@@ -17,17 +18,18 @@
     <div class="city one">
       <img id="banner-1-img" src="/assets/images/home/home_banner1.png" class="object-cover" />
     </div>
+    
+    <!-- Slider dots for banner-1 -->
+    <div class="slider-dots" id="banner-1-dots">
+      <button class="dot active" data-step="1"></button>
+      <button class="dot" data-step="2"></button>
+      <button class="dot" data-step="3"></button>
+    </div>
+    
     <div class="card absolute" id="card-1-1">
       <div class="flex flex-col bg-white py-7 px-10 content-bg">
         <h4>Introduction</h4>
-        <p>Operation and Maintenance represent the final stage in the Design for Safety process, focusing on ensuring a
-          safe and efficient working environment throughout the lifecycle of system. This stage involves thoroughly
-          understanding the maintenance procedures and fostering effective communication and collaboration with the
-          maintenance team. By doing so, it aims to optimise safety measures, thereby minimising the risk of injury to
-          maintenance personnel. Additionally, this phase emphasises the importance of identifying any operational or
-          maintenance issues and implementing appropriate modifications or improvements to address these problems
-          promptly. Through continuous monitoring and proactive adjustments, Operation and Maintenance play a critical
-          role in sustaining a safe workplace and enhancing overall system reliability.
+        <p>
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('introduction.html')">Learn more</button>
@@ -37,14 +39,7 @@
     <div class="card absolute" id="card-1-2">
       <div class="flex flex-col bg-white py-7 px-10 content-bg">
         <h4>Principles of Design for Safety</h4>
-        <p>Operation and Maintenance represent the final stage in the Design for Safety process, focusing on ensuring a
-          safe and efficient working environment throughout the lifecycle of system. This stage involves thoroughly
-          understanding the maintenance procedures and fostering effective communication and collaboration with the
-          maintenance team. By doing so, it aims to optimise safety measures, thereby minimising the risk of injury to
-          maintenance personnel. Additionally, this phase emphasises the importance of identifying any operational or
-          maintenance issues and implementing appropriate modifications or improvements to address these problems
-          promptly. Through continuous monitoring and proactive adjustments, Operation and Maintenance play a critical
-          role in sustaining a safe workplace and enhancing overall system reliability.
+        <p>
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('introduction.html')">Learn more</button>
@@ -54,14 +49,7 @@
     <div class="card absolute" id="card-1-3">
       <div class="flex flex-col bg-white py-7 px-10 content-bg">
         <h4>Housing Authority Safety Management System</h4>
-        <p>Operation and Maintenance represent the final stage in the Design for Safety process, focusing on ensuring a
-          safe and efficient working environment throughout the lifecycle of system. This stage involves thoroughly
-          understanding the maintenance procedures and fostering effective communication and collaboration with the
-          maintenance team. By doing so, it aims to optimise safety measures, thereby minimising the risk of injury to
-          maintenance personnel. Additionally, this phase emphasises the importance of identifying any operational or
-          maintenance issues and implementing appropriate modifications or improvements to address these problems
-          promptly. Through continuous monitoring and proactive adjustments, Operation and Maintenance play a critical
-          role in sustaining a safe workplace and enhancing overall system reliability.
+        <p>
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('introduction.html')">Learn more</button>
@@ -86,17 +74,8 @@
       </div>
       <div class="content-bg">
         <h4>Preliminary Design </h4>
-        <p>The Preliminary Design stage forms the critical foundation for ensuring safety in planning and design,
-          setting the trajectory for all subsequent project phases. At this stage, the scope and objectives of the
-          development are clearly defined, and essential design information needs are identified leveraging advanced
-          tools such as Building Information Modelling and Design for Manufacture and Assembly. A comprehensive risk
-          assessment is conducted to proactively identify potential hazards that may arise throughout the life cycle of
-          the structure, while also considering environmental factors, available resources, and the likelihood of
-          successful risk mitigation. The principles of safe design are embedded from the outset, guiding decisions on
-          site layout, circulation, accessibility, and integration with the surrounding environment. By adopting a
-          holistic and systematic approach during preliminary design, the project team ensures that safety is not an
-          afterthought, but an integral part of the planning process ultimately creating built environments that are not
-          only functional and sustainable, but also safe and harmonious for all users.
+        <p>
+          The Pictorial Guide was first published in 2010 to promote good practice in planning and design for safety in project life cycle. This edition aimed to include more examples of Hong Kong Housing Authority projects on planning and design of safety built up in past few years and to present the
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('1_preliminary_design.html')">Learn more</button>
@@ -114,22 +93,8 @@
       </div>
       <div class="flex flex-col bg-white py-7 px-10 content-bg">
         <h4>Detailed Design</h4>
-        <p>Detailed Design is a critical stage in the planning and design process that focuses on refining and
-          optimising the project to ensure safety throughout its lifecycle. At this stage, designers modify the
-          preliminary design to accommodate stakeholder inputs, thoroughly identify and assess project hazards and
-          impacts, and develop multiple design options aligned with the hierarchy of control measures. Detailed Design
-          involves rigorous testing, trialing, and evaluation of design solutions to select the optimal approach that
-          balances safety, functionality, and practicality. Effective communication and collaboration among all
-          stakeholders including maintenance supervisors and end-users are essential to incorporate their perspectives,
-          especially regarding future maintenance and operational safety. Designers are responsible for conducting
-          comprehensive risk assessments to identify significant hazards and to implement control measures that
-          eliminate or reduce risks to the lowest practicable level. This proactive approach not only minimises risks
-          during construction but also facilitates safer maintenance and operation, ultimately protecting workers,
-          occupants, and the public. Examples of safety-focused design considerations include the use of lighter, safer
-          gate mechanisms, waterproofing between wet and electrical service rooms to prevent hazards, adoption of twin
-          water tanks to ensure uninterrupted supply and prevent disease, and provision of safe access platforms for
-          maintenance work. The Detailed Design stage is thus fundamental to embedding safety into the infrastructure
-          and housing we develop, reflecting a commitment to safeguarding health and well-being at work and beyond.
+        <p>
+          The Pictorial Guide was first published in 2010 to promote good practice in planning and design for safety in project life cycle. This edition aimed to include more examples of Hong Kong Housing Authority projects on planning and design of safety built up in past few years and to present the
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('2_detailed_design.html')">Learn more</button>
@@ -147,16 +112,7 @@
       </div>
       <div class="flex flex-col bg-white py-7 px-10 content-bg">
         <h4>Tendering</h4>
-        <p>In the tendering stage of a construction project, integrating design for safety is crucial to ensure that
-          safety risks are effectively managed from the outset. This stage requires the provision of clear,
-          project-specific safety information, including significant hazards and impacts, to enable tenderers to prepare
-          comprehensive risk control plans. Tenderers must submit an Outline Safety Plan alongside their bids,
-          demonstrating how they will address identified risks, especially those arising from their proposed
-          construction methods. Evaluating tenders should go beyond price competitiveness to include a thorough
-          assessment of the tenderers’ safety performance and compliance with safety requirements. The awarding of
-          contracts must prioritise contractors who can demonstrate robust safety management capabilities, ensuring a
-          safe working environment throughout construction. This process fosters collaboration, transparency, and
-          continuous improvement in safety practices, aligning with the ultimate goal of zero incidents on site.
+        <p>
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('3_tendering.html')">Learn more</button>
@@ -174,17 +130,7 @@
       </div>
       <div class="flex flex-col bg-white py-7 px-10 content-bg">
         <h4>Construction</h4>
-        <p>During the construction stage, ensuring safety is paramount and requires meticulous planning, management, and
-          coordination to protect all workers on site from the outset. This phase involves proactive identification and
-          control of hazards through comprehensive safety plans, regular risk assessments, and strict adherence to
-          safety regulations and standards. Effective communication and cooperation among all stakeholders including
-          designers, contractors, and safety personnel are essential to manage the dynamic and complex construction
-          environment. Incorporating advanced technologies such as Smart Site Safety Systems enhances real-time
-          monitoring and early hazard detection, further reducing risks. Additionally, construction methods and design
-          details should be optimised to minimise hazards, such as using prefabrication to reduce work at height and
-          ensuring safe handling of materials and equipment. Continuous safety auditing, surprise inspections, and
-          safety training programmes reinforce a culture of vigilance and compliance, ultimately fostering a safer
-          construction process that safeguards workers’ health and well-being throughout the project lifecycle.
+        <p>
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('4_construction.html')">Learn more</button>
@@ -202,14 +148,7 @@
       </div>
       <div class="flex flex-col bg-white py-7 px-10 content-bg">
         <h4>Operation and Maintenance</h4>
-        <p>Operation and Maintenance represent the final stage in the Design for Safety process, focusing on ensuring a
-          safe and efficient working environment throughout the lifecycle of system. This stage involves thoroughly
-          understanding the maintenance procedures and fostering effective communication and collaboration with the
-          maintenance team. By doing so, it aims to optimise safety measures, thereby minimising the risk of injury to
-          maintenance personnel. Additionally, this phase emphasises the importance of identifying any operational or
-          maintenance issues and implementing appropriate modifications or improvements to address these problems
-          promptly. Through continuous monitoring and proactive adjustments, Operation and Maintenance play a critical
-          role in sustaining a safe workplace and enhancing overall system reliability.
+        <p>
         </p>
         <div class="btn-wrap">
           <button onclick="redirectTo('5_operation_maintenance.html')">Learn more</button>
