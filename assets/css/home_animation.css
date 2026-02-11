@@ -10,18 +10,18 @@
   width: 90vw;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   @media screen and (min-width: 768px) {
-    width: 40vw;
+    width: 800px;
   }
   .content-bg{
     position: relative;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 2rem 4.5rem 0.5rem 4.5rem;
+    padding: 4rem 4.5rem 2.5rem 4.5rem;
     clip-path: polygon(100% 0, 100% 85%, 90% 100%, 0 100%, 0 0);
     &::after{
       content: "";

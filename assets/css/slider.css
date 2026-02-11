@@ -22,6 +22,7 @@
 .splide__slide__container {
   border: 5px solid #fff;
   position: relative;
+
   /* width: 100%; */
   /* display: inline-block; */
   img {
@@ -29,13 +30,13 @@
     height: auto;
     display: block;
   }
-  
+
   .caption {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     text-align: center;
     padding: 0.5rem 1rem;
@@ -45,18 +46,22 @@
   }
 }
 
-.splide__pagination{
+.splide__pagination {
   bottom: -1.2em !important;
-  .splide__pagination__page.is-active{
+
+  .splide__pagination__page.is-active {
     background: #000;
   }
 }
-.splide__arrow{
+
+.splide__arrow {
   background: #77797b;
-  &.splide__arrow--prev{
+
+  &.splide__arrow--prev {
     left: 2em;
   }
-  &.splide__arrow--next{
+
+  &.splide__arrow--next {
     right: 2em;
   }
 }
@@ -71,11 +76,14 @@
   flex-direction: column;
   gap: 15px;
   z-index: 100;
+  background: #fff;
+  padding: 15px 9px;
+  border-radius: 500px;
 }
 
 .slider-dots .dot {
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   border: 2px solid #999;
   background: transparent;

@@ -8,6 +8,7 @@
   --color-secondary: #EF4136;
   --color-item: #FBE6D1;
   --color-introduction: #be141b;
+  --color-pink: #fcdfe2;
 }
 
 html {
@@ -23,6 +24,32 @@ body {
   width: 100%;
   &.process-template{
     background: var(--color-primary);
+    line-height: 1.6;
+  }
+  &.introduction{
+    background: var(--color-pink);
+    &::before{
+      content: "";
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 25%;
+      left: -40px;
+      z-index: -1;
+      background: #f7b0a079;
+      clip-path: polygon(0 0, 93% 100%, 0% 100%);
+    }
+    &::after{
+      content: "";
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background: #f9b0a040;
+      top: 10%;
+      right: 0;
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      z-index: -1;
+    }
   }
   &.homepage{
     background: rgb(252, 223, 226);
@@ -34,6 +61,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+  }
+  .background{
+    position: relative;
+    z-index: 5;
+    &.square{
+      z-index: 5;
+      position: relative;
+      &::before{
+        content: "";
+        position: fixed;
+        height: 180px;
+        width: 300px;
+        background: #f69321c4;
+        top: 25%;
+        left: 6.5%;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        z-index: 5;
+      }
+    }
   }
 }
 
@@ -292,23 +338,29 @@ footer {
   display: inline-block;
   margin-bottom: 40px;
   position: relative;
-  margin-left: 55px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 6px;
-    width: 82%;
-    background-image: radial-gradient(circle, var(--color-secondary) 2.5px, transparent 2.5px);
-    background-size: 14px 6px;
-    background-position: 0 center;
-    background-repeat: repeat-x;
+  width: 100%;
+  .page-title-inner{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    .dots{
+      &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 0;
+        height: 6px;
+        width: 100%;
+        background-image: radial-gradient(circle, var(--color-secondary) 2.5px, transparent 2.5px);
+        background-size: 14px 6px;
+        background-position: 0 center;
+        background-repeat: repeat-x;
+      }
+    }
   }
 
   .page-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     display: inline-block;
     background: var(--color-introduction);
     color: white;
@@ -350,7 +402,7 @@ footer {
 
   .page-template-content-inner {
     background: #fff;
-    padding: 50px;
+    padding: 90px;
     max-width: 90%;
     margin: auto;
 
@@ -362,14 +414,13 @@ footer {
     }
 
     p {
-      line-height: 1.8;
       color: #231f20;
     }
 
     .dot-divider {
       width: 100%;
       height: 3px;
-      margin: 20px 0;
+      margin: 2.5rem 0;
       background-image: radial-gradient(circle, var(--color-secondary) 1.5px, transparent 1.5px);
       background-size: 8px 3px;
       background-position: 0 center;
