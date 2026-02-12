@@ -153,7 +153,7 @@ function renderSizeAndLang() {
 }
 
 function renderBackdropMenu() {
-  const locale = getLocale()
+  const currentLocale = getLocale()
   const menuItems = [
     { title: 'Introduction', url: 'introduction.html' },
     {
@@ -184,7 +184,7 @@ function renderBackdropMenu() {
               </div>
               <div class="submenu hidden" id="submenu-${index}">
                 ${i.children.map(child => `
-                  <a class="item submenu-item" href="/${locale}/${child.url}">
+                  <a class="item submenu-item" href="/${currentLocale}/${child.url}">
                     <span>${child.title}</span>
                   </a>
                 `).join('')}
@@ -193,7 +193,7 @@ function renderBackdropMenu() {
           `;
         } else {
           return `
-            <a class="item" href="/${locale}/${i.url}">
+            <a class="item" href="/${currentLocale}/${i.url}">
               <span>${i.title}</span>
               <div class="img-wrap"><img src="/assets/images/icon/icon-plus.svg" /></div>
             </a>
@@ -206,6 +206,11 @@ function renderBackdropMenu() {
     </div>
   `
   openBackdrop(menu, false, '#F6CAA0E6')
+  const savedFontSize = localStorage.getItem('fontSizePreference') || 2
+  changeFontSize(parseInt(savedFontSize))
+  
+  // Set active language button
+  updateLanguageButtons(currentLocale)
 }
 
 function renderFooter() {

@@ -79,6 +79,21 @@ body.process-template {
     padding-left: var(--m-pl);
     margin-bottom: 60px;
 
+    &:not(.in-content-title) {
+      &::after {
+        content: "";
+        background-image: url('/assets/images/process-1-header-img.png');
+        width: 400px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -40%);
+      }
+    }
+
     &.in-content-title {
       margin-top: 90px;
       margin-bottom: 30px;
@@ -261,7 +276,10 @@ body.process-template {
       h3 {
         color: var(--color-process1);
       }
-      .line-divider {border-color: var(--color-process1);}
+
+      .line-divider {
+        border-color: var(--color-process1);
+      }
     }
 
     &.two {
@@ -270,7 +288,10 @@ body.process-template {
       h3 {
         color: var(--color-process2);
       }
-      .line-divider {border-color: var(--color-process2);}
+
+      .line-divider {
+        border-color: var(--color-process2);
+      }
     }
 
     &.three {
@@ -279,7 +300,10 @@ body.process-template {
       h3 {
         color: var(--color-process3);
       }
-      .line-divider {border-color: var(--color-process3);}
+
+      .line-divider {
+        border-color: var(--color-process3);
+      }
     }
 
     &.four {
@@ -288,7 +312,10 @@ body.process-template {
       h3 {
         color: var(--color-process4);
       }
-      .line-divider {border-color: var(--color-process4);}
+
+      .line-divider {
+        border-color: var(--color-process4);
+      }
     }
 
     &.five {
@@ -297,7 +324,10 @@ body.process-template {
       h3 {
         color: var(--color-process5);
       }
-      .line-divider {border-color: var(--color-process5);}
+
+      .line-divider {
+        border-color: var(--color-process5);
+      }
     }
   }
 }

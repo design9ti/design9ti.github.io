@@ -165,7 +165,7 @@ function animationSecond() {
       pin: true,
       scrub: 1.5,
       anticipatePin: 1,
-      markers: true // debug usage
+      // markers: true // debug usage
     }
   })
   gsap.set("#banner-2-img", { xPercent: -50, yPercent: -50 })

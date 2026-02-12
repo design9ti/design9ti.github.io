@@ -332,6 +332,7 @@ footer {
 .lang-switcher {
   div {
     background: #E2E2E2;
+    color: var(--color-secondary);
     padding: 5px 10px 6px;
 
     &.active {
