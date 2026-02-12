@@ -1,76 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1939.87 1294.59">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1078.76 826.03">
   <defs>
     <style>
       .cls-1 {
-        opacity: .61;
-        stroke: #f9cbbc;
-        stroke-width: .61px;
+        opacity: .62;
+        stroke: #f9c9b9;
+        stroke-width: .63px;
       }
 
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47, .cls-48, .cls-49, .cls-50, .cls-51, .cls-52, .cls-53, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-59, .cls-60, .cls-61, .cls-62 {
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47, .cls-48, .cls-49, .cls-50, .cls-51, .cls-52, .cls-53, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-59, .cls-60, .cls-61, .cls-62, .cls-63 {
         fill: none;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-23, .cls-25, .cls-26, .cls-27, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47, .cls-48, .cls-49, .cls-50, .cls-51, .cls-52, .cls-53, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-59, .cls-60, .cls-61, .cls-62, .cls-63 {
         stroke-miterlimit: 10;
       }
 
-      .cls-2 {
-        opacity: .77;
-        stroke: #f59d81;
-        stroke-width: .98px;
-      }
-
       .cls-3 {
-        opacity: .86;
-        stroke: #f2825f;
-        stroke-width: 1.2px;
+        opacity: .61;
+        stroke: #faccbd;
+        stroke-width: .61px;
       }
 
       .cls-4 {
-        opacity: .52;
-        stroke: #fbe3db;
-        stroke-width: .42px;
+        opacity: .79;
+        stroke: #f49677;
+        stroke-width: 1.04px;
       }
 
       .cls-5 {
-        opacity: .53;
-        stroke: #fbe0d8;
-        stroke-width: .44px;
+        opacity: .77;
+        stroke: #f59e82;
+        stroke-width: .98px;
       }
 
       .cls-6 {
-        opacity: .64;
-        stroke: #f8c2b2;
-        stroke-width: .68px;
-      }
-
-      .cls-7 {
         opacity: .49;
-        stroke: #fceee9;
+        stroke: #fdefea;
         stroke-width: .33px;
       }
 
-      .cls-8 {
-        opacity: .59;
-        stroke: #fad0c3;
-        stroke-width: .57px;
-      }
-
-      .cls-9 {
+      .cls-7 {
         opacity: .56;
-        stroke: #fad8cd;
+        stroke: #fbd9ce;
         stroke-width: .5px;
       }
 
+      .cls-8 {
+        opacity: .63;
+        stroke: #f9c6b6;
+        stroke-width: .66px;
+      }
+
+      .cls-9 {
+        opacity: .73;
+        stroke: #f6a890;
+        stroke-width: .89px;
+      }
+
       .cls-10 {
-        opacity: .58;
-        stroke: #fad3c6;
-        stroke-width: .55px;
+        opacity: .82;
+        stroke: #f38d6d;
+        stroke-width: 1.11px;
       }
 
       .cls-11 {
-        opacity: .46;
-        stroke: #fdf6f4;
-        stroke-width: .27px;
+        opacity: .64;
+        stroke: #f9c3b3;
+        stroke-width: .68px;
       }
 
       .cls-12 {
@@ -80,248 +77,253 @@
       }
 
       .cls-13 {
+        opacity: .68;
+        stroke: #f7b6a1;
+        stroke-width: .79px;
+      }
+
+      .cls-14 {
         opacity: .9;
         stroke: #f17851;
         stroke-width: 1.28px;
       }
 
-      .cls-14 {
-        opacity: .66;
-        stroke: #f7baa7;
-        stroke-width: .74px;
-      }
-
       .cls-15 {
-        opacity: .74;
-        stroke: #f5a58b;
-        stroke-width: .91px;
+        opacity: .58;
+        stroke: #fbd4c7;
+        stroke-width: .55px;
       }
 
       .cls-16 {
-        opacity: .79;
-        stroke: #f4977b;
-        stroke-width: 1.02px;
+        opacity: .59;
+        stroke: #fad1c4;
+        stroke-width: .57px;
       }
 
       .cls-17 {
-        opacity: .98;
-        stroke: #ef5f32;
-        stroke-width: 1.48px;
+        opacity: .51;
+        stroke: #fce7e0;
+        stroke-width: .4px;
       }
 
       .cls-18 {
+        opacity: .6;
+        stroke: #facec0;
+        stroke-width: .59px;
+      }
+
+      .cls-19 {
+        opacity: .65;
+        stroke: #f8beac;
+        stroke-width: .72px;
+      }
+
+      .cls-20 {
+        opacity: .46;
+        stroke: #fef7f5;
+        stroke-width: .27px;
+      }
+
+      .cls-21 {
+        opacity: .69;
+        stroke: #f7b39e;
+        stroke-width: .81px;
+      }
+
+      .cls-22 {
+        opacity: .98;
+        stroke: #ef5f32;
+        stroke-miterlimit: 10;
+        stroke-width: 1.48px;
+      }
+
+      .cls-23 {
+        opacity: .57;
+        stroke: #fbd6cb;
+        stroke-width: .53px;
+      }
+
+      .cls-24 {
         opacity: .97;
         stroke: #ef6235;
         stroke-width: 1.45px;
       }
 
-      .cls-19 {
-        opacity: .85;
-        stroke: #f28463;
-        stroke-width: 1.17px;
+      .cls-24, .cls-28 {
+        stroke-miterlimit: 10;
       }
 
-      .cls-20 {
-        opacity: .84;
-        stroke: #f28766;
-        stroke-width: 1.15px;
+      .cls-25 {
+        opacity: .79;
+        stroke: #f4987b;
+        stroke-width: 1.02px;
       }
 
-      .cls-21 {
-        opacity: .54;
-        stroke: #fbded4;
-        stroke-width: .46px;
+      .cls-26 {
+        opacity: .72;
+        stroke: #f6ab93;
+        stroke-width: .87px;
       }
 
-      .cls-22 {
-        opacity: .48;
-        stroke: #fdf0ed;
-        stroke-width: .31px;
+      .cls-27 {
+        opacity: .5;
+        stroke: #fde9e3;
+        stroke-width: .38px;
       }
 
-      .cls-23 {
+      .cls-28 {
         opacity: .94;
         stroke: #f06a40;
         stroke-width: 1.39px;
       }
 
-      .cls-24 {
-        opacity: .88;
-        stroke: #f17d58;
-        stroke-width: 1.24px;
+      .cls-29 {
+        opacity: .8;
+        stroke: #f49374;
+        stroke-width: 1.07px;
       }
 
-      .cls-25 {
+      .cls-30 {
+        opacity: .55;
+        stroke: #fbdcd2;
+        stroke-width: .48px;
+      }
+
+      .cls-31 {
         opacity: .93;
         stroke: #f07047;
         stroke-width: 1.35px;
       }
 
-      .cls-26 {
-        opacity: .65;
-        stroke: #f8bdab;
-        stroke-width: .72px;
-      }
-
-      .cls-27 {
-        opacity: .71;
-        stroke: #f6ad96;
-        stroke-width: .85px;
-      }
-
-      .cls-28 {
-        opacity: .64;
-        stroke: #f8c0ae;
-        stroke-width: .7px;
-      }
-
-      .cls-29 {
-        opacity: .92;
-        stroke: #f0724a;
-        stroke-width: 1.32px;
-      }
-
-      .cls-30 {
-        opacity: .72;
-        stroke: #f6aa92;
-        stroke-width: .87px;
-      }
-
-      .cls-31 {
-        opacity: .68;
-        stroke: #f7b5a0;
-        stroke-width: .79px;
-      }
-
       .cls-32 {
-        opacity: .75;
-        stroke: #f5a288;
-        stroke-width: .94px;
+        opacity: .83;
+        stroke: #f38b6a;
+        stroke-width: 1.13px;
       }
 
       .cls-33 {
         opacity: .44;
-        stroke: #fffbfb;
+        stroke: #fffcfc;
         stroke-width: .22px;
       }
 
       .cls-34 {
-        opacity: .69;
-        stroke: #f7b29d;
-        stroke-width: .81px;
+        opacity: .66;
+        stroke: #f8bba8;
+        stroke-width: .74px;
       }
 
       .cls-35 {
-        opacity: .8;
-        stroke: #f49274;
-        stroke-width: 1.07px;
+        opacity: .88;
+        stroke: #f27d58;
+        stroke-width: 1.24px;
       }
 
       .cls-36 {
-        opacity: .78;
-        stroke: #f49a7e;
-        stroke-width: 1px;
+        opacity: .92;
+        stroke: #f1724a;
+        stroke-width: 1.32px;
       }
 
       .cls-37 {
-        opacity: .5;
-        stroke: #fcebe6;
-        stroke-width: .35px;
+        opacity: .7;
+        stroke: #f7b19a;
+        stroke-width: .83px;
       }
 
       .cls-38 {
+        opacity: .48;
+        stroke: #fef1ee;
+        stroke-width: .31px;
+      }
+
+      .cls-39 {
+        opacity: .76;
+        stroke: #f5a085;
+        stroke-width: .96px;
+      }
+
+      .cls-40 {
         opacity: .43;
         stroke: #fff;
         stroke-width: .2px;
       }
 
-      .cls-39 {
-        opacity: .51;
-        stroke: #fce6df;
-        stroke-width: .4px;
+      .cls-41 {
+        opacity: .54;
+        stroke: #fcdfd5;
+        stroke-width: .46px;
       }
 
-      .cls-40 {
+      .cls-42 {
         stroke: #ee5a2b;
         stroke-width: 1.52px;
       }
 
-      .cls-41 {
-        opacity: .81;
-        stroke: #f38f71;
-        stroke-width: 1.09px;
+      .cls-43 {
+        opacity: .74;
+        stroke: #f6a68c;
+        stroke-width: .91px;
       }
 
-      .cls-42 {
+      .cls-44 {
+        opacity: .64;
+        stroke: #f9c1af;
+        stroke-width: .7px;
+      }
+
+      .cls-45 {
+        opacity: .52;
+        stroke: #fce4dc;
+        stroke-width: .42px;
+      }
+
+      .cls-46 {
         opacity: .89;
         stroke: #f17a55;
         stroke-width: 1.26px;
       }
 
-      .cls-43 {
-        opacity: .76;
-        stroke: #f59f84;
-        stroke-width: .96px;
-      }
-
-      .cls-44 {
-        opacity: .55;
-        stroke: #fbdbd1;
-        stroke-width: .48px;
-      }
-
-      .cls-45 {
-        opacity: .5;
-        stroke: #fce8e2;
-        stroke-width: .38px;
-      }
-
-      .cls-46 {
-        opacity: .6;
-        stroke: #f9cdbf;
-        stroke-width: .59px;
-      }
-
       .cls-47 {
-        opacity: .63;
-        stroke: #f8c5b5;
-        stroke-width: .66px;
+        opacity: .67;
+        stroke: #f8b9a5;
+        stroke-width: .76px;
       }
 
       .cls-48 {
-        opacity: .7;
-        stroke: #f6b099;
-        stroke-width: .83px;
-      }
-
-      .cls-49 {
         opacity: .96;
         stroke: #ef6539;
         stroke-width: 1.43px;
       }
 
-      .cls-50 {
+      .cls-49 {
         opacity: .93;
         stroke: #f06d43;
         stroke-width: 1.37px;
       }
 
+      .cls-50 {
+        opacity: .45;
+        stroke: #fefaf8;
+        stroke-width: .25px;
+      }
+
       .cls-51 {
-        opacity: .62;
-        stroke: #f9c8b8;
-        stroke-width: .63px;
+        opacity: .75;
+        stroke: #f6a389;
+        stroke-width: .94px;
       }
 
       .cls-52 {
-        opacity: .57;
-        stroke: #fad5ca;
-        stroke-width: .53px;
+        opacity: .53;
+        stroke: #fce1d9;
+        stroke-width: .44px;
       }
 
       .cls-53 {
-        opacity: .73;
-        stroke: #f6a78f;
-        stroke-width: .89px;
+        opacity: .47;
+        stroke: #fef4f1;
+        stroke-width: .29px;
       }
 
       .cls-54 {
@@ -331,114 +333,133 @@
       }
 
       .cls-55 {
-        opacity: .47;
-        stroke: #fdf3f0;
-        stroke-width: .29px;
-      }
-
-      .cls-56 {
         opacity: .95;
         stroke: #ef683c;
         stroke-width: 1.41px;
       }
 
+      .cls-56 {
+        opacity: .71;
+        stroke: #f7ae97;
+        stroke-width: .85px;
+      }
+
       .cls-57 {
-        opacity: .67;
-        stroke: #f7b8a4;
-        stroke-width: .76px;
+        opacity: .5;
+        stroke: #fdece7;
+        stroke-width: .35px;
       }
 
       .cls-58 {
-        opacity: .45;
-        stroke: #fdf9f7;
-        stroke-width: .25px;
+        opacity: .81;
+        stroke: #f49071;
+        stroke-width: 1.09px;
       }
 
       .cls-59 {
-        opacity: .83;
-        stroke: #f38a6a;
-        stroke-width: 1.13px;
+        opacity: .85;
+        stroke: #f28563;
+        stroke-width: 1.17px;
       }
 
       .cls-60 {
-        opacity: .82;
-        stroke: #f38c6d;
-        stroke-width: 1.11px;
+        opacity: .84;
+        stroke: #f38866;
+        stroke-width: 1.15px;
+      }
+
+      .cls-64 {
+        clip-path: url(#clippath);
       }
 
       .cls-61 {
+        opacity: .86;
+        stroke: #f2835f;
+        stroke-width: 1.2px;
+      }
+
+      .cls-62 {
         opacity: .87;
         stroke: #f2805c;
         stroke-width: 1.22px;
       }
 
-      .cls-62 {
-        opacity: .79;
-        stroke: #f49577;
-        stroke-width: 1.04px;
+      .cls-63 {
+        opacity: .78;
+        stroke: #f59b7e;
+        stroke-width: 1px;
       }
     </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" y="0" width="1078.76" height="826.03"/>
+    </clipPath>
   </defs>
-  <line class="cls-40" x1="1162.33" y1=".66" x2="1939.49" y2="449.36"/>
-  <line class="cls-12" x1="1143.27" y1="8.52" x2="1930.13" y2="463.22"/>
-  <line class="cls-17" x1="1124.22" y1="16.38" x2="1920.77" y2="477.07"/>
-  <line class="cls-18" x1="1105.17" y1="24.24" x2="1911.41" y2="490.93"/>
-  <line class="cls-49" x1="1086.11" y1="32.1" x2="1902.04" y2="504.78"/>
-  <line class="cls-56" x1="1067.06" y1="39.96" x2="1892.68" y2="518.64"/>
-  <line class="cls-23" x1="1048" y1="47.82" x2="1883.32" y2="532.49"/>
-  <line class="cls-50" x1="1028.95" y1="55.68" x2="1873.96" y2="546.34"/>
-  <line class="cls-25" x1="1009.9" y1="63.53" x2="1864.59" y2="560.2"/>
-  <line class="cls-29" x1="990.84" y1="71.39" x2="1855.23" y2="574.05"/>
-  <line class="cls-54" x1="971.79" y1="79.25" x2="1845.87" y2="587.91"/>
-  <line class="cls-13" x1="952.74" y1="87.11" x2="1836.51" y2="601.76"/>
-  <line class="cls-42" x1="933.68" y1="94.97" x2="1827.14" y2="615.62"/>
-  <line class="cls-24" x1="914.63" y1="102.83" x2="1817.78" y2="629.47"/>
-  <line class="cls-61" x1="895.57" y1="110.69" x2="1808.42" y2="643.33"/>
-  <line class="cls-3" x1="876.52" y1="118.55" x2="1799.06" y2="657.18"/>
-  <line class="cls-19" x1="857.47" y1="126.41" x2="1789.69" y2="671.04"/>
-  <line class="cls-20" x1="838.41" y1="134.27" x2="1780.33" y2="684.89"/>
-  <line class="cls-59" x1="819.36" y1="142.13" x2="1770.97" y2="698.75"/>
-  <line class="cls-60" x1="800.31" y1="149.99" x2="1761.61" y2="712.6"/>
-  <line class="cls-41" x1="781.25" y1="157.85" x2="1752.24" y2="726.46"/>
-  <line class="cls-35" x1="762.2" y1="165.71" x2="1742.88" y2="740.31"/>
-  <line class="cls-62" x1="743.15" y1="173.57" x2="1733.52" y2="754.17"/>
-  <line class="cls-16" x1="724.09" y1="181.43" x2="1724.16" y2="768.02"/>
-  <line class="cls-36" x1="705.04" y1="189.29" x2="1714.79" y2="781.87"/>
-  <line class="cls-2" x1="685.98" y1="197.15" x2="1705.43" y2="795.73"/>
-  <line class="cls-43" x1="666.93" y1="205.01" x2="1696.07" y2="809.58"/>
-  <line class="cls-32" x1="647.88" y1="212.87" x2="1686.71" y2="823.44"/>
-  <line class="cls-15" x1="628.82" y1="220.73" x2="1677.34" y2="837.29"/>
-  <line class="cls-53" x1="609.77" y1="228.59" x2="1667.98" y2="851.15"/>
-  <line class="cls-30" x1="590.72" y1="236.45" x2="1658.62" y2="865"/>
-  <line class="cls-27" x1="571.66" y1="244.31" x2="1649.26" y2="878.86"/>
-  <line class="cls-48" x1="552.61" y1="252.17" x2="1639.89" y2="892.71"/>
-  <line class="cls-34" x1="533.55" y1="260.03" x2="1630.53" y2="906.57"/>
-  <line class="cls-31" x1="514.5" y1="267.89" x2="1621.17" y2="920.42"/>
-  <line class="cls-57" x1="495.45" y1="275.75" x2="1611.81" y2="934.28"/>
-  <line class="cls-14" x1="476.39" y1="283.6" x2="1602.44" y2="948.13"/>
-  <line class="cls-26" x1="457.34" y1="291.46" x2="1593.08" y2="961.99"/>
-  <line class="cls-28" x1="438.29" y1="299.32" x2="1583.72" y2="975.84"/>
-  <line class="cls-6" x1="419.23" y1="307.18" x2="1574.36" y2="989.7"/>
-  <line class="cls-47" x1="400.18" y1="315.04" x2="1564.99" y2="1003.55"/>
-  <line class="cls-51" x1="381.13" y1="322.9" x2="1555.63" y2="1017.4"/>
-  <line class="cls-1" x1="362.07" y1="330.76" x2="1546.27" y2="1031.26"/>
-  <line class="cls-46" x1="343.02" y1="338.62" x2="1536.91" y2="1045.11"/>
-  <line class="cls-8" x1="323.96" y1="346.48" x2="1527.54" y2="1058.97"/>
-  <line class="cls-10" x1="304.91" y1="354.34" x2="1518.18" y2="1072.82"/>
-  <line class="cls-52" x1="285.86" y1="362.2" x2="1508.82" y2="1086.68"/>
-  <line class="cls-9" x1="266.8" y1="370.06" x2="1499.46" y2="1100.53"/>
-  <line class="cls-44" x1="247.75" y1="377.92" x2="1490.1" y2="1114.39"/>
-  <line class="cls-21" x1="228.7" y1="385.78" x2="1480.73" y2="1128.24"/>
-  <line class="cls-5" x1="209.64" y1="393.64" x2="1471.37" y2="1142.1"/>
-  <line class="cls-4" x1="190.59" y1="401.5" x2="1462.01" y2="1155.95"/>
-  <line class="cls-39" x1="171.53" y1="409.36" x2="1452.65" y2="1169.81"/>
-  <line class="cls-45" x1="152.48" y1="417.22" x2="1443.28" y2="1183.66"/>
-  <line class="cls-37" x1="133.43" y1="425.08" x2="1433.92" y2="1197.52"/>
-  <line class="cls-7" x1="114.37" y1="432.94" x2="1424.56" y2="1211.37"/>
-  <line class="cls-22" x1="95.32" y1="440.8" x2="1415.2" y2="1225.23"/>
-  <line class="cls-55" x1="76.27" y1="448.66" x2="1405.83" y2="1239.08"/>
-  <line class="cls-11" x1="57.21" y1="456.52" x2="1396.47" y2="1252.94"/>
-  <line class="cls-58" x1="38.16" y1="464.38" x2="1387.11" y2="1266.79"/>
-  <line class="cls-33" x1="19.11" y1="472.24" x2="1377.75" y2="1280.64"/>
-  <line class="cls-38" x1=".05" y1="480.1" x2="1368.38" y2="1294.5"/>
+  <g id="Text">
+    <g class="cls-64">
+      <g>
+        <line class="cls-42" x1="632.25" y1="-230.01" x2="1409.41" y2="218.69"/>
+        <line class="cls-12" x1="613.19" y1="-222.15" x2="1400.05" y2="232.55"/>
+        <line class="cls-22" x1="594.14" y1="-214.29" x2="1390.69" y2="246.4"/>
+        <line class="cls-24" x1="575.08" y1="-206.43" x2="1381.32" y2="260.26"/>
+        <line class="cls-48" x1="556.03" y1="-198.57" x2="1371.96" y2="274.11"/>
+        <line class="cls-55" x1="536.98" y1="-190.71" x2="1362.6" y2="287.97"/>
+        <line class="cls-28" x1="517.92" y1="-182.85" x2="1353.24" y2="301.82"/>
+        <line class="cls-49" x1="498.87" y1="-174.99" x2="1343.87" y2="315.68"/>
+        <line class="cls-31" x1="479.82" y1="-167.13" x2="1334.51" y2="329.53"/>
+        <line class="cls-36" x1="460.76" y1="-159.27" x2="1325.15" y2="343.39"/>
+        <line class="cls-54" x1="441.71" y1="-151.41" x2="1315.79" y2="357.24"/>
+        <line class="cls-14" x1="422.66" y1="-143.55" x2="1306.42" y2="371.09"/>
+        <line class="cls-46" x1="403.6" y1="-135.7" x2="1297.06" y2="384.95"/>
+        <line class="cls-35" x1="384.55" y1="-127.84" x2="1287.7" y2="398.8"/>
+        <line class="cls-62" x1="365.49" y1="-119.98" x2="1278.34" y2="412.66"/>
+        <line class="cls-61" x1="346.44" y1="-112.12" x2="1268.98" y2="426.51"/>
+        <line class="cls-59" x1="327.39" y1="-104.26" x2="1259.61" y2="440.37"/>
+        <line class="cls-60" x1="308.33" y1="-96.4" x2="1250.25" y2="454.22"/>
+        <line class="cls-32" x1="289.28" y1="-88.54" x2="1240.89" y2="468.08"/>
+        <line class="cls-10" x1="270.23" y1="-80.68" x2="1231.53" y2="481.93"/>
+        <line class="cls-58" x1="251.17" y1="-72.82" x2="1222.16" y2="495.79"/>
+        <line class="cls-29" x1="232.12" y1="-64.96" x2="1212.8" y2="509.64"/>
+        <line class="cls-4" x1="213.06" y1="-57.1" x2="1203.44" y2="523.5"/>
+        <line class="cls-25" x1="194.01" y1="-49.24" x2="1194.08" y2="537.35"/>
+        <line class="cls-63" x1="174.96" y1="-41.38" x2="1184.71" y2="551.21"/>
+        <line class="cls-5" x1="155.9" y1="-33.52" x2="1175.35" y2="565.06"/>
+        <line class="cls-39" x1="136.85" y1="-25.66" x2="1165.99" y2="578.92"/>
+        <line class="cls-51" x1="117.8" y1="-17.8" x2="1156.63" y2="592.77"/>
+        <line class="cls-43" x1="98.74" y1="-9.94" x2="1147.26" y2="606.62"/>
+        <line class="cls-9" x1="79.69" y1="-2.08" x2="1137.9" y2="620.48"/>
+        <line class="cls-26" x1="60.64" y1="5.78" x2="1128.54" y2="634.33"/>
+        <line class="cls-56" x1="41.58" y1="13.64" x2="1119.18" y2="648.19"/>
+        <line class="cls-37" x1="22.53" y1="21.5" x2="1109.81" y2="662.04"/>
+        <line class="cls-21" x1="3.47" y1="29.36" x2="1100.45" y2="675.9"/>
+        <line class="cls-13" x1="-15.58" y1="37.22" x2="1091.09" y2="689.75"/>
+        <line class="cls-47" x1="-34.63" y1="45.08" x2="1081.73" y2="703.61"/>
+        <line class="cls-34" x1="-53.69" y1="52.94" x2="1072.36" y2="717.46"/>
+        <line class="cls-19" x1="-72.74" y1="60.8" x2="1063" y2="731.32"/>
+        <line class="cls-44" x1="-91.79" y1="68.66" x2="1053.64" y2="745.17"/>
+        <line class="cls-11" x1="-110.85" y1="76.52" x2="1044.28" y2="759.03"/>
+        <line class="cls-8" x1="-129.9" y1="84.37" x2="1034.91" y2="772.88"/>
+        <line class="cls-1" x1="-148.96" y1="92.23" x2="1025.55" y2="786.74"/>
+        <line class="cls-3" x1="-168.01" y1="100.09" x2="1016.19" y2="800.59"/>
+        <line class="cls-18" x1="-187.06" y1="107.95" x2="1006.83" y2="814.45"/>
+        <line class="cls-16" x1="-206.12" y1="115.81" x2="997.46" y2="828.3"/>
+        <line class="cls-15" x1="-225.17" y1="123.67" x2="988.1" y2="842.16"/>
+        <line class="cls-23" x1="-244.22" y1="131.53" x2="978.74" y2="856.01"/>
+        <line class="cls-7" x1="-263.28" y1="139.39" x2="969.38" y2="869.86"/>
+        <line class="cls-30" x1="-282.33" y1="147.25" x2="960.01" y2="883.72"/>
+        <line class="cls-41" x1="-301.38" y1="155.11" x2="950.65" y2="897.57"/>
+        <line class="cls-52" x1="-320.44" y1="162.97" x2="941.29" y2="911.43"/>
+        <line class="cls-45" x1="-339.49" y1="170.83" x2="931.93" y2="925.28"/>
+        <line class="cls-17" x1="-358.55" y1="178.69" x2="922.56" y2="939.14"/>
+        <line class="cls-27" x1="-377.6" y1="186.55" x2="913.2" y2="952.99"/>
+        <line class="cls-57" x1="-396.65" y1="194.41" x2="903.84" y2="966.85"/>
+        <line class="cls-6" x1="-415.71" y1="202.27" x2="894.48" y2="980.7"/>
+        <line class="cls-38" x1="-434.76" y1="210.13" x2="885.11" y2="994.56"/>
+        <line class="cls-53" x1="-453.81" y1="217.99" x2="875.75" y2="1008.41"/>
+        <line class="cls-20" x1="-472.87" y1="225.85" x2="866.39" y2="1022.27"/>
+        <line class="cls-50" x1="-491.92" y1="233.71" x2="857.03" y2="1036.12"/>
+        <line class="cls-33" x1="-510.98" y1="241.57" x2="847.67" y2="1049.98"/>
+        <line class="cls-40" x1="-530.03" y1="249.43" x2="838.3" y2="1063.83"/>
+      </g>
+    </g>
+  </g>
 </svg>

@@ -157,70 +157,145 @@ function animationFirst() {
 
 function animationSecond() {
   const t2 = gsap.timeline({
-    defaults: { ease: "none" },
+    id: 'banner-2-trigger',
     scrollTrigger: {
       trigger: "#banner-2",
-      start: "top top",
-      end: "+=1000%",
+      start: "20px",
+      end: "+=900%",
       pin: true,
-      scrub: 1.5,
+      scrub: 1,
       anticipatePin: 1,
       // markers: true // debug usage
     }
   })
   gsap.set("#banner-2-img", { xPercent: -50, yPercent: -50 })
   // step 1
-  
+  t2.fromTo("#banner-2-img",
+    {
+      scale: 1,
+      x: 0,
+      y: 0,
+    },
+    {
+      scale: 1.2,
+      x: '430px',
+      y: '340px',
+      duration: 3,
+      onEnter: () => t2.scrollTrigger.spacer.style.backgroundColor = "#edd7c3"
+    })
+  t2.fromTo("#card-1", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2, ease: "power3.inOut" }, "+=0")
+  // end step1
+
+  // pre step2
+  t2.to({}, { duration: 3 })
+
+ // start step2 
+  t2.fromTo("#card-1", { autoAlpha: 1 }, { autoAlpha: 0, duration: 1, ease: "power1.inOut" })
   t2.to("#banner-2-img", {
-    scale: 1.4,
-    x: 500,
-    y: 820,
-    duration: 3,
-    onEnter: () => t2.scrollTrigger.spacer.style.backgroundColor = "#edd7c3"
-  }, "+=1.5")
-  t2.to("#card-1", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
-  t2.to("#card-1", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
-  // step 2
+    scale: 1.2,
+    x: '760px',
+    y: '-230px',
+    duration: 3
+  })
+  t2.fromTo("#card-2", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2, ease: "power1.inOut" })
+  // end step2
+
+  // pre step3
+  t2.to({}, { duration: 3 })
+
+  // start step3
+  t2.fromTo("#card-2", { autoAlpha: 1 }, { autoAlpha: 0, duration: 1, ease: "power1.inOut" })
   t2.to("#banner-2-img", {
-    scale: 1.4,
-    x: 700,
-    y: 200,
-    duration: 4,
-  }, "+=1.2")
-  t2.to("#card-2", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
-  t2.to("#card-2", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
-  // step 3
+    scale: 1.2,
+    x: '-3%',
+    y: '-5%',
+    duration: 3
+  })
+  t2.fromTo("#card-3", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2, ease: "power1.inOut" })
+  // end step3
+  // pre step4
+  t2.to({}, { duration: 3 })
+  // start step4
+  t2.fromTo("#card-3", { autoAlpha: 1 }, { autoAlpha: 0, duration: 1, ease: "power1.inOut" })
   t2.to("#banner-2-img", {
-    scale: 1.4,
-    x: -200,
-    y: 380,
-    duration: 4,
-  }, "+=1.2")
-  t2.to("#card-3", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
-  t2.to("#card-3", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
-  // step 4
+    scale: 1.2,
+    x: '-23%',
+    y: '25%',
+    duration: 3
+  })
+  t2.fromTo("#card-4", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2, ease: "power1.inOut" })
+  // pre step5
+  t2.to({}, { duration: 3 })
+  // start step5
+  t2.fromTo("#card-4", { autoAlpha: 1 }, { autoAlpha: 0, duration: 1, ease: "power1.inOut" })
   t2.to("#banner-2-img", {
-    scale: 1.4,
-    x: -450,
-    y: 950,
-    duration: 4,
-  }, "+=1.2")
-  t2.to("#card-4", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
-  t2.to("#card-4", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
-  // step 5
-  t2.to("#banner-2-img", {
-    scale: 1.4,
-    x: -300,
-    y: 0,
-    duration: 4,
-  }, "+=1.2")
-  t2.to("#card-5", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
-  t2.to("#card-5", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
-  // end
+    scale: 1.2,
+    x: '-23%',
+    y: '-35%',
+    duration: 3
+  })
+  t2.fromTo("#card-5", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2, ease: "power1.inOut" })
+  t2.to({}, { duration: 3 })
+  t2.fromTo("#card-5", { autoAlpha: 1 }, { autoAlpha: 0, duration: 1, ease: "power1.inOut" })
+  t2.to({}, { duration: 2 })
+
   t2.to("#banner-2-img", {
     x: 0,
     y: 0,
     scale: 1,
     duration: 3
   }, "+=1")
+
+  // t2.to("#banner-2-img", {
+  //   scale: 1.4,
+  //   x: 500,
+  //   y: 820,
+  //   duration: 3,
+  //   onEnter: () => t2.scrollTrigger.spacer.style.backgroundColor = "#edd7c3"
+  // }, "+=1.5")
+  // t2.to("#card-1", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
+  // t2.to("#card-1", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
+  // // step 2
+  // t2.to("#banner-2-img", {
+  //   scale: 1.4,
+  //   x: 700,
+  //   y: 200,
+  //   duration: 4,
+  // }, "+=1.2")
+  // t2.to("#card-2", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
+  // t2.to("#card-2", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
+  // // step 3
+  // t2.to("#banner-2-img", {
+  //   scale: 1.4,
+  //   x: -200,
+  //   y: 380,
+  //   duration: 4,
+  // }, "+=1.2")
+  // t2.to("#card-3", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
+  // t2.to("#card-3", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
+  // // step 4
+  // t2.to("#banner-2-img", {
+  //   scale: 1.4,
+  //   x: -450,
+  //   y: 950,
+  //   duration: 4,
+  // }, "+=1.2")
+  // t2.to("#card-4", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
+  // t2.to("#card-4", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
+  // // step 5
+  // t2.to("#banner-2-img", {
+  //   scale: 1.4,
+  //   x: -300,
+  //   y: 0,
+  //   duration: 4,
+  // }, "+=1.2")
+  // t2.to("#card-5", { autoAlpha: 1, duration: 2.2, ease: "power1.out" }, "+=0.4")
+  // t2.to("#card-5", { autoAlpha: 0, duration: 1.8, ease: "power1.in" }, "+=0.8")
+  // // end
+  // t2.to("#banner-2-img", {
+  //   x: 0,
+  //   y: 0,
+  //   scale: 1,
+  //   duration: 3
+  // }, "+=1")
 }
