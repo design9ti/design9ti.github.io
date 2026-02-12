@@ -6,37 +6,58 @@
 body.process-template {
   background: var(--color-primary);
   line-height: 1.6;
+
   &::before {
     content: "";
-    position: fixed;
-    height: 250px;
-    width: 417px;
-    background: rgba(239, 188, 156, 1);
-    top: 25%;
-    right: -1.5%;
-    z-index: -1;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  }
-
-  &::after {
-    content: "";
-    position: fixed;
-    height: 700px;
-    width: 1166px;
-    background: rgba(239, 188, 156, 1);
-    bottom: -31%;
-    left: -30%;
-    z-index: -1;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  }
-
-  /* .content-container {
-    background-image: url(/assets/images/process_bg_right_top.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 36vw -25vh;
-    background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: -30%;
+    right: -20%;
+    z-index: -1;
+    background-image: url('/assets/images/process_bg_right_top.svg');
+  }
+
+  /* &::after {
+    content: "";
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 550px;
+    width: 350px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('/assets/images/process-content-right.svg');
   } */
+
+  .content-container {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      position: fixed;
+      height: 400px;
+      width: 320px;
+      top: 25%;
+      left: 0;
+      z-index: -1;
+      background-image: url('/assets/images/process-content-left.svg');
+    }
+
+    &::after {
+      content: "";
+      background-repeat: no-repeat;
+      position: fixed;
+      height: 550px;
+      width: 310px;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      background-image: url('/assets/images/process-content-right.svg');
+    }
+  }
 }
 
 /* only for process 5 */
@@ -56,8 +77,12 @@ body.process-template {
     background-position-x: var(--m-pl);
     position: relative;
     padding-left: var(--m-pl);
-    margin-bottom: 0;
-    left: 20px;
+    margin-bottom: 60px;
+
+    &.in-content-title {
+      margin-top: 90px;
+      margin-bottom: 30px;
+    }
 
     @media screen and (min-width: 768px) {
       background-position-x: var(--pl);
@@ -195,6 +220,7 @@ body.process-template {
   .page-template-content-inner {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 80px;
     max-width: 100%;
     background: transparent;
 
@@ -209,57 +235,80 @@ body.process-template {
       font-size: 1.75rem;
     }
 
-    h4 {
+    h3 {
       line-height: 1.2;
       font-weight: 700;
       font-size: 1.5rem;
-      color: black;
     }
 
     p {
       font-size: 1rem;
       line-height: 1.6;
-      margin-bottom: 2rem;
+      margin-bottom: 1.875rem;
+    }
+
+    .line-divider {
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid #f06523;
+      margin: 50px 0;
     }
 
     /* process one !! */
     &.one {
-      h2 {
+
+      h2,
+      h3 {
         color: var(--color-process1);
       }
+      .line-divider {border-color: var(--color-process1);}
     }
 
     &.two {
-      h2 {
+
+      h2,
+      h3 {
         color: var(--color-process2);
       }
+      .line-divider {border-color: var(--color-process2);}
     }
 
     &.three {
-      h2 {
+
+      h2,
+      h3 {
         color: var(--color-process3);
       }
+      .line-divider {border-color: var(--color-process3);}
     }
 
     &.four {
-      h2 {
+
+      h2,
+      h3 {
         color: var(--color-process4);
       }
+      .line-divider {border-color: var(--color-process4);}
     }
 
     &.five {
-      h2 {
+
+      h2,
+      h3 {
         color: var(--color-process5);
       }
+      .line-divider {border-color: var(--color-process5);}
     }
   }
 }
 
 .single-img-section {
   margin: 1.875rem auto;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
+  width: 100%;
 
   &.sm {
     margin: 1.5rem auto;
@@ -269,7 +318,14 @@ body.process-template {
     margin: .25rem auto;
   }
 
+  img {
+    max-width: 800px;
+    margin: auto;
+    object-fit: contain;
+  }
+
   p {
+    text-align: center !important;
     font-style: italic;
     color: #555 !important;
     margin-bottom: 0 !important;

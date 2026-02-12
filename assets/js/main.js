@@ -44,7 +44,7 @@ function renderOtherHeader() {
 
   const body = document.querySelector('body')
   body.insertAdjacentHTML('afterbegin', `
-    <nav class="" id="nav-header">
+    <nav class="" id="in-page-navnav">
       <div class="flex justify-between nav-other-inner w-full px-7.5 h-[100px] items-center">
         <a class="inline-flex" href="/">
           <img class="w-[240px]" src="/assets/images/icon/home-logo.svg"/>
@@ -86,9 +86,9 @@ function renderOtherHeader() {
 function changeFontSize(size) {
   const root = document.documentElement
   const sizeMap = {
-    1: '16px',
-    2: '18px',
-    3: '20px'
+    1: '12.8px',
+    2: '16px',
+    3: '18px'
   }
   root.style.fontSize = sizeMap[size]
   localStorage.setItem('fontSizePreference', size)

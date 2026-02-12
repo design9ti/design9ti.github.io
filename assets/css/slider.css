@@ -13,7 +13,11 @@
 }
 
 .splide__track{
-  background-color: #71440233;
+  background-image: url('/assets/images/slider-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 10px 0 10px;
 }
 
 .splide__slide {
@@ -24,11 +28,8 @@
 }
 
 .splide__slide__container {
-  border: 5px solid #fff;
   position: relative;
   display: inline-flex;
-  /* width: 100%; */
-  /* display: inline-block; */
   img {
     width: 100%;
     height: auto;
@@ -54,8 +55,11 @@
 .splide__pagination {
   bottom: -1.2em !important;
 
-  .splide__pagination__page.is-active {
-    background: #000;
+  .splide__pagination__page{
+    transform: scale(1.2);
+    &.is-active {
+      background: #f06522;
+    }
   }
 }
 

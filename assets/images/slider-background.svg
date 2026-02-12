@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1028.1 354.21">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .3;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f69321;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-2 {
+        opacity: .2;
+      }
+
+      .cls-3 {
+        fill: #fcdac4;
+      }
+
+      .cls-4 {
+        opacity: .6;
+      }
+
+      .cls-5 {
+        fill: #f7b0a0;
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" y=".24" width="1028.1" height="353.98"/>
+    </clipPath>
+  </defs>
+  <g class="cls-6">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Text">
+        <g>
+          <g>
+            <rect class="cls-3" y=".24" width="1028.1" height="353.98"/>
+            <g class="cls-7">
+              <g class="cls-4">
+                <polygon class="cls-5" points="-277.23 854.25 1572.77 -210.25 1572.77 -210.27 -277.23 854.24 -277.23 854.25 -277.23 854.25"/>
+                <polygon class="cls-5" points="1058.77 518.28 305.33 518.27 1031.85 100.23 1058.77 83.76 1058.77 518.28"/>
+              </g>
+              <polygon class="cls-2" points="1024.43 55.33 914.29 121.64 1024.43 187.95 1134.57 121.64 1024.43 55.33"/>
+              <polygon class="cls-1" points="-55.95 -34.73 -305.84 115.71 -55.95 266.16 193.94 115.71 -55.95 -34.73"/>
+            </g>
+          </g>
+          <rect class="cls-3" x=".34" width="1027.76" height="354.21"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
