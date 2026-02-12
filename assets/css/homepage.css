@@ -1,0 +1,70 @@
+body.homepage {
+  background: rgb(252, 223, 226);
+
+  &::before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #f7b0a079;
+    clip-path: polygon(0 0, 93% 100%, 0% 100%);
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #f9b0a040;
+    top: 0;
+    right: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    z-index: -1;
+  }
+}
+
+.home-banner {
+  /* height: 100vh; */
+  height: calc(100vh - 100px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Slider dots for banner animations */
+.slider-dots {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 100;
+  background: #fff;
+  padding: 15px 9px;
+  border-radius: 500px;
+}
+
+.slider-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-dots .dot:hover {
+  border-color: #333;
+  background: #ccc;
+}
+
+.slider-dots .dot.active {
+  background: #333;
+  border-color: #333;
+}

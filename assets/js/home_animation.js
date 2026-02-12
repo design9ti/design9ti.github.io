@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger, Observer, ScrollSmoother);
   animationFirst()
+  animationSecond()
   setupSliderButtons()
   setupScrollDetection()
 })
@@ -167,7 +168,9 @@ function animationSecond() {
       markers: true // debug usage
     }
   })
+  gsap.set("#banner-2-img", { xPercent: -50, yPercent: -50 })
   // step 1
+  
   t2.to("#banner-2-img", {
     scale: 1.4,
     x: 500,

@@ -12,6 +12,10 @@
   max-width: 100%;
 }
 
+.splide__track{
+  background-color: #71440233;
+}
+
 .splide__slide {
   display: flex;
   align-items: center;
@@ -22,13 +26,14 @@
 .splide__slide__container {
   border: 5px solid #fff;
   position: relative;
-
+  display: inline-flex;
   /* width: 100%; */
   /* display: inline-block; */
   img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: contain;
   }
 
   .caption {
@@ -64,39 +69,4 @@
   &.splide__arrow--next {
     right: 2em;
   }
-}
-
-/* Slider dots for banner animations */
-.slider-dots {
-  position: fixed;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 100;
-  background: #fff;
-  padding: 15px 9px;
-  border-radius: 500px;
-}
-
-.slider-dots .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 2px solid #999;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.slider-dots .dot:hover {
-  border-color: #333;
-  background: #ccc;
-}
-
-.slider-dots .dot.active {
-  background: #333;
-  border-color: #333;
 }

@@ -140,9 +140,9 @@ function updateFontSizeButtons(activeSize) {
 function renderSizeAndLang() {
   return `
     <div class="acc-font-size flex justify-center gap-2">
-      <div class="" onclick="changeFontSize(1)"><span class="size1">A</span></div>
-      <div class="" onclick="changeFontSize(2)"><span class="size2">A</span></div>
-      <div class="" onclick="changeFontSize(3)"><span class="size3">A</span></div>
+      <div class="flex items-end" onclick="changeFontSize(1)"><span class="size1">A</span></div>
+      <div class="flex items-end" onclick="changeFontSize(2)"><span class="size2">A</span></div>
+      <div class="flex items-end" onclick="changeFontSize(3)"><span class="size3">A</span></div>
     </div>
     <div class="lang-switcher flex justify-center text-base">
       <div class="cursor-pointer" onclick="changeLanguage('zh')"><span class="font-bold">繁</span></div>
