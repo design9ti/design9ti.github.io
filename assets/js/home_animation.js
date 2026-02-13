@@ -438,7 +438,7 @@ function animationSecond() {
     gsap.to("#banner-2-img", {
       scale: 1.4,
       x: '-40%',
-      y: '-15%',
+      y: '-25%',
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
