@@ -10,7 +10,7 @@ function renderHeader() {
     <nav class="sticky top-0">
       <div class="flex justify-between nav-inner absolute w-full px-2.5">
         <a class="inline-flex" href="/">
-          <img class="w-[380px]" src="/assets/images/icon/home-logo.svg"/>
+          <img class="w-[380px]" src="/assets/images/icon/home-logo.svg" style="margin-left:20px;" />
         </a>
         <div class="flex items-start justify-center menu gap-[15px]">
           <a

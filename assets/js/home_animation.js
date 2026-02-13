@@ -101,19 +101,21 @@ function animationFirst() {
       duration: 1,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-1-1", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 1
+        if (lastImageStep === 1) {
+          gsap.fromTo("#card-1-1", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
@@ -134,19 +136,21 @@ function animationFirst() {
       duration: 1,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-1-2", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 2
+        if (lastImageStep === 2) {
+          gsap.fromTo("#card-1-2", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
@@ -167,19 +171,21 @@ function animationFirst() {
       duration: 1,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-1-3", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 3
+        if (lastImageStep === 3) {
+          gsap.fromTo("#card-1-3", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
@@ -300,19 +306,21 @@ function animationSecond() {
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-1", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 1
+        if (lastImageStep === 1) {
+          gsap.fromTo("#card-1", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
@@ -332,19 +340,21 @@ function animationSecond() {
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-2", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 2
+        if (lastImageStep === 2) {
+          gsap.fromTo("#card-2", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
@@ -364,19 +374,21 @@ function animationSecond() {
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-3", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 3
+        if (lastImageStep === 3) {
+          gsap.fromTo("#card-3", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
@@ -396,19 +408,21 @@ function animationSecond() {
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-4", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 4
+        if (lastImageStep === 4) {
+          gsap.fromTo("#card-4", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
@@ -428,19 +442,21 @@ function animationSecond() {
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-5", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Only show card if still on step 5
+        if (lastImageStep === 5) {
+          gsap.fromTo("#card-5", 
+            {
+              autoAlpha: 0,
+              y: 30
+            },
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
+        }
       }
     });
   }
