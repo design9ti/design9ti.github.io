@@ -90,9 +90,10 @@ function animationFirst() {
     lastImageStep = 1;
     updateDots(1);
     
-    // Kill any ongoing animations and hide other cards
-    gsap.killTweensOf(["#card-1-1", "#card-1-2", "#card-1-3"]);
-    gsap.set("#card-1-2, #card-1-3", { autoAlpha: 0, y: 0 });
+    // Hide other cards and remove bounce class
+    document.getElementById('card-1-2').classList.remove('bounce');
+    document.getElementById('card-1-3').classList.remove('bounce');
+    gsap.set("#card-1-2, #card-1-3", { autoAlpha: 0 });
     
     gsap.to("#banner-1-img", {
       scale: 1.4,
@@ -101,19 +102,9 @@ function animationFirst() {
       duration: 1,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-1-1", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Show card with bounce after image move completes
+        document.getElementById('card-1-1').classList.add('bounce');
+        gsap.to("#card-1-1", { autoAlpha: 1, duration: 0.1, ease: "power2.in" });
       }
     });
   }
@@ -123,30 +114,21 @@ function animationFirst() {
     lastImageStep = 2;
     updateDots(2);
     
-    // Kill any ongoing animations and hide other cards
-    gsap.killTweensOf(["#card-1-1", "#card-1-2", "#card-1-3"]);
-    gsap.set("#card-1-1, #card-1-3", { autoAlpha: 0, y: 0 });
+    // Hide other cards and remove bounce class
+    document.getElementById('card-1-1').classList.remove('bounce');
+    document.getElementById('card-1-3').classList.remove('bounce');
+    gsap.set("#card-1-1, #card-1-3", { autoAlpha: 0 });
     
     gsap.to("#banner-1-img", {
       scale: 1.4,
       x: '-53%',
-      y: '-15%',
+      y: '0%',
       duration: 1,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-1-2", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Show card with bounce after image move completes
+        document.getElementById('card-1-2').classList.add('bounce');
+        gsap.to("#card-1-2", { autoAlpha: 1, duration: 0.1, ease: "power2.in" });
       }
     });
   }
@@ -156,9 +138,10 @@ function animationFirst() {
     lastImageStep = 3;
     updateDots(3);
     
-    // Kill any ongoing animations and hide other cards
-    gsap.killTweensOf(["#card-1-1", "#card-1-2", "#card-1-3"]);
-    gsap.set("#card-1-1, #card-1-2", { autoAlpha: 0, y: 0 });
+    // Hide other cards and remove bounce class
+    document.getElementById('card-1-1').classList.remove('bounce');
+    document.getElementById('card-1-2').classList.remove('bounce');
+    gsap.set("#card-1-1, #card-1-2", { autoAlpha: 0 });
     
     gsap.to("#banner-1-img", {
       scale: 1.4,
@@ -167,19 +150,9 @@ function animationFirst() {
       duration: 1,
       ease: "power2.inOut",
       onComplete: () => {
-        // Bounce animation with GSAP
-        gsap.fromTo("#card-1-3", 
-          {
-            autoAlpha: 0,
-            y: 30
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out"
-          }
-        );
+        // Show card with bounce after image move completes
+        document.getElementById('card-1-3').classList.add('bounce');
+        gsap.to("#card-1-3", { autoAlpha: 1, duration: 0.1, ease: "power2.in" });
       }
     });
   }
@@ -189,9 +162,11 @@ function animationFirst() {
     lastImageStep = 4;
     updateDots(4);
     
-    // Kill any ongoing animations and hide all cards
-    gsap.killTweensOf(["#card-1-1", "#card-1-2", "#card-1-3"]);
-    gsap.to("#card-1-1, #card-1-2, #card-1-3", { autoAlpha: 0, y: 0, duration: 0.1 });
+    // Hide all cards and remove bounce class
+    document.getElementById('card-1-1').classList.remove('bounce');
+    document.getElementById('card-1-2').classList.remove('bounce');
+    document.getElementById('card-1-3').classList.remove('bounce');
+    gsap.to("#card-1-1, #card-1-2, #card-1-3", { autoAlpha: 0, duration: 0.1 });
     
     gsap.to("#banner-1-img", {
       x: 0,
@@ -208,8 +183,10 @@ function animationFirst() {
     lastImageStep = 0;
     updateDots(0);
     console.log('Reset animation called');
-    gsap.killTweensOf(["#card-1-1", "#card-1-2", "#card-1-3"]);
-    gsap.to("#card-1-1, #card-1-2, #card-1-3", { autoAlpha: 0, y: 0, duration: 0.1 });
+    document.getElementById('card-1-1').classList.remove('bounce');
+    document.getElementById('card-1-2').classList.remove('bounce');
+    document.getElementById('card-1-3').classList.remove('bounce');
+    gsap.to("#card-1-1, #card-1-2, #card-1-3", { autoAlpha: 0, duration: 0.1 });
     gsap.to("#banner-1-img", {
       scale: 1,
       x: 0,
@@ -229,8 +206,10 @@ function animationFirst() {
     updateDots(0);
     console.log('Reset to original state');
     
-    gsap.killTweensOf(["#card-1-1", "#card-1-2", "#card-1-3"]);
-    gsap.to("#card-1-1, #card-1-2, #card-1-3", { autoAlpha: 0, y: 0, duration: 0.3 });
+    document.getElementById('card-1-1').classList.remove('bounce');
+    document.getElementById('card-1-2').classList.remove('bounce');
+    document.getElementById('card-1-3').classList.remove('bounce');
+    gsap.to("#card-1-1, #card-1-2, #card-1-3", { autoAlpha: 0, duration: 0.3 });
     gsap.to("#banner-1-img", {
       scale: 1,
       x: 0,
