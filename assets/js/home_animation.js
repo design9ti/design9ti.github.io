@@ -104,10 +104,10 @@ function animationFirst() {
       x: 0,
       y: 0,
     },
-    { // 640px, 400px
+    {
       scale: 1.4,
-      x: '300px',
-      y: '330px',
+      x: '35%',
+      y: '38%',
       duration: 3,
     })
   // Image animation complete, now show card
@@ -121,7 +121,7 @@ function animationFirst() {
   t1.fromTo("#card-1-1", { autoAlpha: 1 }, { autoAlpha: 0, duration: 1, ease: "power1.inOut" })
   t1.to("#banner-1-img", {
     scale: 1.4,
-    x: '-10%',
+    x: '-53%',
     y: '0%',
     duration: 3
   })
@@ -135,7 +135,7 @@ function animationFirst() {
   t1.fromTo("#card-1-2", { autoAlpha: 1 }, { autoAlpha: 0, duration: 1, ease: "power1.inOut" })
   t1.to("#banner-1-img", {
     scale: 1.4,
-    x: '-20%',
+    x: '-50%',
     y: '50%',
     duration: 3
   })

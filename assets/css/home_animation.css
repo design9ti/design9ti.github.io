@@ -13,12 +13,24 @@
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 7;
 
   @media screen and (min-width: 768px) {
     width: 800px;
   }
-
+  &#card-1-1{
+    top: 47%;
+    left: 30%;
+  }
+  &#card-1-2{
+    top: 50%;
+    left: 60%;
+  }
+  &#card-1-3{
+    left: 65%;
+  }
   .content-bg {
+    gap: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,20 +49,29 @@
       background: var(--color-process1);
     }
   }
-
+  .card-title-img{
+    width: 50%;
+    margin-bottom: 10px;
+  }
   .card-title {
-    margin-bottom: 20px;
-    img {
+    /* margin-bottom: 20px; */
+    position: relative;
+    .home-text {
       transform: translateY(-50%);
       top: 2px;
-      position: relative;
+      right: 0;
+      position: absolute;
+      z-index: -1;
     }
   }
 
   h4 {
+    position: relative;
     font-size: 1.2rem;
     font-weight: bold;
     color: #bb202f;
+    background-color: #fff;
+    padding-right: 20px;
   }
 
   p {
@@ -61,8 +82,6 @@
   .btn-wrap {
     display: flex;
     justify-content: end;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
     button {
       background: #ef6522;
@@ -84,96 +103,8 @@
 }
 
 .title {
-  padding: 20px;
-  background: #fff;
-
-  h1 {
-    padding-left: 80px;
-    line-height: 1;
-
-    &::before {
-      font-size: 100px;
-      position: absolute;
-      left: 10px;
-      top: 5%;
-      padding-right: 30px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 75px;
-      top: 35%;
-      width: 1px;
-      height: 80px;
-      background: #000;
-      transform: translateY(-50%);
-    }
-  }
-
-  &.one {
-    h1 {
-      &::before {
-        content: "1"
-      }
-    }
-
-    svg {
-      fill: #ef6522;
-    }
-  }
-
-  &.two {
-    h1 {
-      &::before {
-        content: "2"
-      }
-    }
-
-    svg {
-      fill: #ef6522;
-    }
-  }
-
-  &.three {
-    h1 {
-      &::before {
-        content: "3"
-      }
-    }
-
-    svg {
-      fill: #ef6522;
-    }
-  }
-
-  &.four {
-    h1 {
-      &::before {
-        content: "4"
-      }
-    }
-
-    svg {
-      fill: #ef6522;
-    }
-  }
-
-  &.five {
-    h1 {
-      &::before {
-        content: "5"
-      }
-    }
-
-    svg {
-      fill: #ef6522;
-    }
-  }
-
-  svg {
-    margin-top: 15px;
-    width: 30%;
+  img{
+    width: 50%;
   }
 }
 
@@ -185,11 +116,13 @@
 
 #banner-1-img {
   position: relative;
-  top: 60%;
+  /* top: 60%; */
+  bottom: -60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: unset !important;
-  width: 90vw;
+  /* height: unset !important; */
+  height: 112vh;
+  /* width: 90vw; */
 }
 
 #banner-2-img {

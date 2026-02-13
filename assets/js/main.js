@@ -86,9 +86,9 @@ function renderOtherHeader() {
 function changeFontSize(size) {
   const root = document.documentElement
   const sizeMap = {
-    1: '12.8px',
-    2: '16px',
-    3: '18px'
+    1: '0.8rem',
+    2: '1rem',
+    3: '1.2rem'
   }
   root.style.fontSize = sizeMap[size]
   localStorage.setItem('fontSizePreference', size)

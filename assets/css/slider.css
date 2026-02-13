@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 40px auto;
 }
 
 .splide {
@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 20px 0 20px;
+  padding: 20px 0 35px;
 }
 
 .splide__slide {
@@ -39,14 +39,14 @@
 
   .caption {
     position: absolute;
-    bottom: 0;
+    bottom: -27px;
     left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
+    /* right: 0; */
+    /* background: rgba(0, 0, 0, 0.4); */
+    /* color: #fff; */
+    /* text-align: center; */
+    /* padding: 0.5rem 1rem; */
+    /* font-weight: 500; */
     margin: 0;
     font-size: 14px;
   }
