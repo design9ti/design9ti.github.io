@@ -57,7 +57,7 @@
   }
 
   .card-title-img {
-    width: 50%;
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -104,23 +104,35 @@
 }
 
 #card-1 {
-  top: 15%;
-  left: 25%;
+  top: 25%;
+  left: 32%;
+  .card-title-img{
+    width: 80%;
+  }
 }
 
 #card-2 {
-  top: 22%;
+  top: 52%;
   left: 28%;
+  .card-title-img{
+    width: 70%;
+  }
 }
 
 #card-3 {
-  top: 42%;
+  top: 19%;
   left: 65%;
+  .card-title-img{
+    width: 50%;
+  }
 }
 
 #card-4 {
-  top: 39%;
+  top: 14%;
   left: 60%;
+  .card-title-img{
+    width: 65%;
+  }
 }
 
 #card-5 {
