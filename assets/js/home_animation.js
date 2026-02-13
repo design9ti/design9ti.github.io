@@ -104,7 +104,7 @@ function animationFirst() {
       x: 0,
       y: 0,
     },
-    {
+    { // 640px, 400px
       scale: 1.4,
       x: '300px',
       y: '330px',

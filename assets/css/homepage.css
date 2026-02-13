@@ -1,7 +1,7 @@
 body.homepage {
   background: rgb(252, 223, 226);
 
-  &::before {
+  /* &::before {
     content: "";
     position: fixed;
     height: 100%;
@@ -11,9 +11,9 @@ body.homepage {
     z-index: -1;
     background: #f7b0a079;
     clip-path: polygon(0 0, 93% 100%, 0% 100%);
-  }
+  } */
 
-  &::after {
+  /* &::after {
     content: "";
     position: fixed;
     height: 100%;
@@ -23,15 +23,15 @@ body.homepage {
     right: 0;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: -2;
-  }
+  } */
 }
 
 .home-banner {
-  /* height: 100vh; */
-  height: calc(100vh - 100px);
-  background-repeat: no-repeat;
+  height: 100vh;
+  /* height: calc(100vh - 100px); */
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center; */
 }
 
 /* Slider dots for banner animations */

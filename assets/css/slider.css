@@ -16,8 +16,8 @@
   background-image: url('/assets/images/slider-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  padding: 10px 0 10px;
+  background-position: top center;
+  padding: 20px 0 20px;
 }
 
 .splide__slide {
