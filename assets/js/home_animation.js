@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  gsap.registerPlugin(ScrollTrigger, Observer, ScrollSmoother);
+  gsap.registerPlugin(ScrollTrigger);
   animationFirst()
   animationSecond()
   setupSliderButtons()

@@ -1,37 +1,11 @@
+@import url('./variables.css');
+
 body.homepage {
   background: rgb(252, 223, 226);
-
-  /* &::before {
-    content: "";
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: #f7b0a079;
-    clip-path: polygon(0 0, 93% 100%, 0% 100%);
-  } */
-
-  /* &::after {
-    content: "";
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: #f9b0a040;
-    top: 0;
-    right: 0;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    z-index: -2;
-  } */
 }
 
 .home-banner {
   height: 100vh;
-  /* height: calc(100vh - 100px); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center; */
 }
 
 /* Slider dots for banner animations */
@@ -52,26 +26,28 @@ body.homepage {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 2px solid #fedbd8;
-    background: #fedbd8;
+    border: 2px solid var(--color-dot);
+    background: var(--color-dot);
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
-      border-color: #fedbd8;
-      background: #fedbd8;
+      border-color: var(--color-dot);
+      background: var(--color-dot);
     }
 
     &.active {
-      background: #ef4237;
-      border-color: #ef4237;
+      background: var(--color-process1);
+      border-color: var(--color-process1);
     }
   }
 }
-#banner-3{
+
+#banner-3 {
   padding-top: 80px;
   padding-bottom: 120px;
 }
-.an-text-title{
+
+.an-text-title {
   position: relative;
 }
