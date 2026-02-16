@@ -301,8 +301,8 @@ function animationSecond() {
     
     gsap.to("#banner-2-img", {
       scale: 1.4,
-      x: '560px',
-      y: '260px',
+      x: '580px',
+      y: '330px',
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
@@ -335,8 +335,8 @@ function animationSecond() {
     
     gsap.to("#banner-2-img", {
       scale: 1.4,
-      x: '710px',
-      y: '-50px',
+      x: '570px',
+      y: '160px',
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
@@ -369,8 +369,8 @@ function animationSecond() {
     
     gsap.to("#banner-2-img", {
       scale: 1.4,
-      x: '-15%',
-      y: '20%',
+      x: '-26%',
+      y: '23%',
       duration: 1.5,
       ease: "power2.inOut",
       onComplete: () => {
