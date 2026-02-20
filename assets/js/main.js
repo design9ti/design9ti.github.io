@@ -31,10 +31,10 @@ function renderOtherHeader() {
       title: '5 Construction Process', url: '',
       children: [
         { title: '1. Preliminary Design', url: '1_preliminary_design.html' },
-        { title: '2. Detailed Design', url: '2_detailed_design.html' },
-        { title: '3. Tendering', url: '3_tendering.html' },
-        { title: '4. Construction', url: '4_construction.html' },
-        { title: '5. Operation & Maintenance', url: '5_operation_maintenance.html' },
+        { title: '2. Detailed Design', url: '1_preliminary_design.html' },
+        { title: '3. Tendering', url: '1_preliminary_design.html' },
+        { title: '4. Construction', url: '1_preliminary_design.html' },
+        { title: '5. Operation & Maintenance', url: '1_preliminary_design.html' },
       ]
     },
     { title: 'BIM', url: 'bim.html' },
@@ -160,10 +160,10 @@ function renderBackdropMenu() {
       title: '5 Construction Process', url: '',
       children: [
         { title: '1. Preliminary Design', url: '1_preliminary_design.html' },
-        { title: '2. Detailed Design', url: '2_detailed_design.html' },
-        { title: '3. Tendering', url: '3_tendering.html' },
-        { title: '4. Construction', url: '4_construction.html' },
-        { title: '5. Operation & Maintenance', url: '5_operation_maintenance.html' },
+        { title: '2. Detailed Design', url: '1_preliminary_design.html' },
+        { title: '3. Tendering', url: '1_preliminary_design.html' },
+        { title: '4. Construction', url: '1_preliminary_design.html' },
+        { title: '5. Operation & Maintenance', url: '1_preliminary_design.html' },
       ]
     },
     { title: 'BIM', url: 'bim.html' },
