@@ -61,11 +61,6 @@ body.process-template {
 
   /* only for process 5's one */
   .page-title-wrapper {
-    background-position-x: var(--m-pl);
-    position: relative;
-    padding-left: var(--m-pl);
-    margin-bottom: 60px;
-
     &:not(.in-content-title) {
       &::after {
         content: "";
@@ -80,141 +75,13 @@ body.process-template {
         transform: translate(0%, -40%);
       }
     }
-
-    &.in-content-title {
-      margin-top: 90px;
-      margin-bottom: 30px;
+    img{
+      /* width: 60%; */
+      height: 150px;
     }
-
-    @media screen and (min-width: 768px) {
-      background-position-x: var(--pl);
-      padding-left: var(--pl);
-      left: unset;
-    }
-
-    &::after {
-      left: unset;
-    }
-
-    &::before {
-      position: absolute;
-      left: 0;
-      font-size: 100px;
-      bottom: -10px;
-      -webkit-text-stroke: 10px;
-      filter: drop-shadow(10px 7px 0px rgba(0, 0, 0, 0.1));
-
-      @media screen and (min-width: 768px) {
-        font-size: 160px;
-      }
-    }
-
-    h1 {
-      font-size: 1rem;
-
-      @media screen and (min-width: 768px) {
-        font-size: 2.5rem;
-      }
-    }
-
-    .page-subtitle {
-      color: #bb202f;
-      font-weight: 600;
-      font-size: 0.8rem;
-      padding-left: 24px;
-
-      @media screen and (min-width: 768px) {
-        font-size: 1.6rem;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        height: 6px;
-        width: 110px;
-        bottom: -5px;
-        margin: 20px 0;
-        background-image: radial-gradient(circle, var(--color-secondary) 2.5px, transparent 2.5px);
-        background-size: 14px 6px;
-        background-position: 0 center;
-        background-repeat: repeat-x;
-      }
-    }
-
-    /* process one !! */
-    &.one {
-      &::before {
-        content: "1";
-        color: var(--color-process1);
-      }
-
-      .page-title {
-        background: var(--color-process1);
-
-        &::after {
-          background: var(--color-process1);
-        }
-      }
-    }
-
-    &.two {
-      &::before {
-        content: "2";
-        color: var(--color-process2);
-      }
-
-      .page-title {
-        background: var(--color-process2);
-
-        &::after {
-          background: var(--color-process2);
-        }
-      }
-    }
-
-    &.three {
-      &::before {
-        content: "3";
-        color: var(--color-process3);
-      }
-
-      .page-title {
-        background: var(--color-process3);
-
-        &::after {
-          background: var(--color-process3);
-        }
-      }
-    }
-
-    &.four {
-      &::before {
-        content: "4";
-        color: var(--color-process4);
-      }
-
-      .page-title {
-        background: var(--color-process4);
-
-        &::after {
-          background: var(--color-process4);
-        }
-      }
-    }
-
-    &.five {
-      &::before {
-        content: "5";
-        color: var(--color-process5);
-      }
-
-      .page-title {
-        background: var(--color-process5);
-
-        &::after {
-          background: var(--color-process5);
-        }
+    &.five{
+      img{
+        height: 130px;
       }
     }
   }
@@ -325,80 +192,11 @@ body.process-template {
   }
 }
 
-.single-img-section {
-  margin: 1.875rem auto;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  width: 100%;
-
-  &.sm {
-    margin: 1.5rem auto;
-  }
-
-  &.none {
-    margin: .25rem auto;
-  }
-
-  img {
-    max-width: 800px;
-    margin: auto;
-    object-fit: contain;
-  }
-
-  p {
-    text-align: center !important;
-    font-style: italic;
-    color: #555 !important;
-    margin-bottom: 0 !important;
-  }
-}
-
 .flex-box-5-5 {
   display: flex;
   gap: 30px;
   margin-bottom: 1rem;
   .item {
     width: 50%;
-  }
-}
-
-.cs-bullet {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  div {
-    padding-left: 1.2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #000;
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    &::before {
-      content: "";
-      background-image: url('/assets/images/process3/cs-bullet-point.png');
-      width: 14px;
-      height: 14px;
-      position: absolute;
-      background-size: contain;
-      background-repeat: no-repeat;
-      left: 0;
-      top: 5px;
-    }
-
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
-
-  &.no-m {
-    gap: 5px;
-    div{
-      padding-bottom: 0;
-      border-bottom: 0;
-    }
   }
 }

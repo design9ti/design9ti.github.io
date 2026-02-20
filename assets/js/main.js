@@ -37,7 +37,7 @@ function renderOtherHeader() {
         { title: '5. Operation & Maintenance', url: '5_operation_maintenance.html' },
       ]
     },
-    { title: 'BIM', url: 'introduction.html' },
+    { title: 'BIM', url: 'bim.html' },
     { title: 'Case Study', url: 'introduction.html' },
     { title: 'Checklist', url: 'introduction.html' },
   ]
@@ -166,7 +166,7 @@ function renderBackdropMenu() {
         { title: '5. Operation & Maintenance', url: '5_operation_maintenance.html' },
       ]
     },
-    { title: 'BIM', url: 'introduction.html' },
+    { title: 'BIM', url: 'bim.html' },
     { title: 'Case Study', url: 'introduction.html' },
     { title: 'Checklist', url: 'introduction.html' },
     { title: 'Gallery', url: 'introduction.html' },

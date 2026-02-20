@@ -46,7 +46,7 @@
     margin: 0;
     font-size: 14px;
     transform: translateX(-50%);
-    white-space: pre;
+    white-space: nowrap;
   }
 }
 
