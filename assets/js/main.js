@@ -10,7 +10,7 @@ function renderHeader() {
     <nav class="sticky top-0">
       <div class="flex justify-between nav-inner absolute w-full px-2.5">
         <a class="inline-flex" href="/">
-          <img class="w-[380px]" src="/assets/images/icon/home-logo.svg" style="margin-left:20px;" />
+          <img class="w-[380px]" src="/assets/images/Logo_EN.svg" style="margin-left:20px;" />
         </a>
         <div class="flex items-start justify-center menu gap-[15px]">
           <a
@@ -47,7 +47,7 @@ function renderOtherHeader() {
     <nav class="" id="in-page-navnav">
       <div class="flex justify-between nav-other-inner w-full px-7.5 h-[100px] items-center">
         <a class="inline-flex" href="/">
-          <img class="w-[240px]" src="/assets/images/icon/home-logo.svg"/>
+          <img class="w-[240px]" src="/assets/images/Logo_EN.svg"/>
         </a>
         <div class="flex items-center justify-center menu gap-[30px] h-full">
           <div class="menu-wrapper h-full">

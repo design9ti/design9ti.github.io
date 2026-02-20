@@ -303,7 +303,7 @@ function animationSecond() {
       scale: 1.4,
       x: '580px',
       y: '330px',
-      duration: 1.5,
+      duration: 0.8,
       ease: "power2.inOut",
       onComplete: () => {
         // Only show card if still on step 1
@@ -337,7 +337,7 @@ function animationSecond() {
       scale: 1.4,
       x: '570px',
       y: '160px',
-      duration: 1.5,
+      duration: 0.8,
       ease: "power2.inOut",
       onComplete: () => {
         // Only show card if still on step 2
@@ -371,7 +371,7 @@ function animationSecond() {
       scale: 1.4,
       x: '-26%',
       y: '23%',
-      duration: 1.5,
+      duration: 0.8,
       ease: "power2.inOut",
       onComplete: () => {
         // Only show card if still on step 3
@@ -405,7 +405,7 @@ function animationSecond() {
       scale: 1.4,
       x: '-37%',
       y: '62%',
-      duration: 1.5,
+      duration: 0.8,
       ease: "power2.inOut",
       onComplete: () => {
         // Only show card if still on step 4
@@ -439,7 +439,7 @@ function animationSecond() {
       scale: 1.4,
       x: '-40%',
       y: '-25%',
-      duration: 1.5,
+      duration: 0.8,
       ease: "power2.inOut",
       onComplete: () => {
         // Only show card if still on step 5
