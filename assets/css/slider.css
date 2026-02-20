@@ -12,12 +12,12 @@
   max-width: 100%;
 }
 
-.splide__track{
+.splide__track {
   background-image: url('/assets/images/slider-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 20px 0 35px;
+  padding: 35px 0 35px;
 }
 
 .splide__slide {
@@ -30,6 +30,8 @@
 .splide__slide__container {
   position: relative;
   display: inline-flex;
+  width: 100%;
+
   img {
     width: 100%;
     height: auto;
@@ -40,17 +42,20 @@
   .caption {
     position: absolute;
     bottom: -27px;
-    left: 0;
+    left: 50%;
     margin: 0;
     font-size: 14px;
+    transform: translateX(-50%);
+    white-space: pre;
   }
 }
 
 .splide__pagination {
   bottom: -1.2em !important;
 
-  .splide__pagination__page{
+  .splide__pagination__page {
     transform: scale(1.2);
+
     &.is-active {
       background: #f06522;
     }
